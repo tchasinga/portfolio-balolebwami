@@ -17,7 +17,7 @@ function About() {
                         Download resume
                     </h2>
                 </div>
-                <div className="w-full flex gap-3 ">
+                <div className="w-full flex gap-3">
                     <div className="w-96">
                         <Lottie animationData={CodeAnimationPc} className='' />
                     </div>

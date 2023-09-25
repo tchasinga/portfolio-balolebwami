@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import options from '../Data/Objects';
 import '../index.css';
+import Service from './Service';
+import Skills from './Skills';
 
 const ProjectCard = ({ id, image, title, description }) => {
   const controls = useAnimation();
@@ -81,7 +83,7 @@ const Portfolio = () => {
       <div className="px-32 mt-16">
         <h2 className="text-white flex items-center justify-center text-4xl">Portfolio...</h2>
         <div className="">
-          <ul className="font-normal flex gap-52 justify-center  mt-5 text-white">
+          <ul className="font-normal flex gap-10 justify-center  mt-5 text-white">
             <li>Mobile App</li>
             <li>Website</li>
             <li>Desktop</li>
@@ -107,6 +109,8 @@ const Portfolio = () => {
             })}
         </div>
       </div>
+      <Service />
+      <Skills />
     </div>
   );
 };
