@@ -1,20 +1,40 @@
 import React from "react"
 import '../index.css'
-import codeAnimation from '../Animation/animation_lmys4c61.json'
+import codeAnimation from '../Animation/animation_lmyu0eqw'
+import About from "./About"
+
 import Lottie from "lottie-react"
+import Portfolio from "./Portfolio"
 
 const Navbar = () => {
    return (
-    <div className="flex justify-between w-full bg-blue-300 px-10 p-0 text-center items-center">
+     <div id='Model'>
+         <div className="flex justify-between w-full font-100 text-white bg-blue-950 px-32 p-0 text-center items-center font-poppins font-sans">
         <Lottie animationData={codeAnimation} className="w-20 h-20" />
-        <ul className="flex gap-2">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
+        <ul className="flex gap-x-10" >
+            <li className="cursor-pointer">
+                 <h3 className="text-blue-500">Home</h3>
+            </li>
+            <li className="cursor-pointer">
+            <h3>About-me</h3>
+            </li>
+            <li className="cursor-pointer">
+            <h3>Portfolio</h3>
+            </li>
+            <li className="cursor-pointer">
+            <h3>Service</h3>
+            </li>
+            <li className="cursor-pointer">
+            <h3>Experience</h3>
+            </li>
+            <li className="cursor-pointer">
+            <h3>Contact</h3>
+            </li>
         </ul>
-    </div>
+      </div>
+      <About />
+      <Portfolio />
+     </div>
    )
 }
 
