@@ -14,12 +14,12 @@ const Abouts = () => {
                     </h1>
                 </div>
                 <div className="myCodeSpace  flex mt-32 gap-6 items-center">
-                    <div className=" w-6/12 ">
+                    <div className=" w-6/12 hover:-rotate-6 cursor-pointer">
                         <Lottie animationData={AnimationCode} />
                     </div>
                     <div className="flex-col w-3/6 h-3/6">
                         <h3 className="mb-4 text-2xl text-white">About me...</h3>
-                        <p className="text-gray-700 text-white font-light">
+                        <p className="text-gray-500 text-sm font-sans">
                             I'm a Full Stack Developer with a passion for learning new technologies and<br/>
                             Developing new projects. I'm currently  looking for a job as a Full Stack Developer.
                             Where i Can learn more about the field and improve<br/>My skills.
