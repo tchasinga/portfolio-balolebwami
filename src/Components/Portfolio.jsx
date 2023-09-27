@@ -17,10 +17,11 @@ const Portfolio = () => {
                     {
                         options && options.map((getElement) => {
                            return (
-                              <div key={getElement.id} className=" getmyPortfolio flex w-full gap-3 mt-5">
+                              <div key={getElement.id} className=" getmyPortfolio  flex w-full gap-3 mt-10">
                                 <img src={getElement.UrlImg} alt={getElement.title} className="w-2/4" srcset="" />
                                 <div className="">
-                                    <h3 className="text-2xl font-bold">{getElement.title}</h3>
+                                    <h3 className="text-2xl font-bold text-blue-800">{getElement.title}</h3>
+                                    <hr  className="w-10  p-1 mt-1 text-blue-800"/>
                                     <p>{getElement.description}</p>
                                     <a href={getElement.url} target="_blank" rel="noopener noreferrer" className="text-blue-200">View</a>
                                 </div>
