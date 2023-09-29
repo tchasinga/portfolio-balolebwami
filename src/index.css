@@ -61,10 +61,9 @@ body {
  flex-direction: row-reverse;
 }
 
-.myImgPortfolio{
-    border-radius:50px;
-    /* add for me box-shadow and must display as a line with color blue */
-    box-shadow: 30px 0px 10px 20px;
+.myImgPortfolio {
+    border-radius: 50px;
+    /* Add box-shadow for a blue ring */
 }
 
 
