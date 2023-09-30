@@ -80,6 +80,7 @@ body {
     .myheader {
         color: blueviolet;
         background-color: blueviolet;
+        display: flex;
     }
     body {
         border : 2px solid black; 
