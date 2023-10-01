@@ -17,43 +17,11 @@ body {
 *{
     scroll-behavior: smooth;
     transition: all 0.5s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 /* my breackpoint for tablet */
-@media screen and (max-width: 834px) {
-
-    body {
-        font-size: 14px;
-        line-height: 20px;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        font-stretch: normal;
-    }
-
-    .myheader {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .myheader img{
-        width: 100px;
-        height: 100px;
-    }
-    .myheader img:hover{
-       transform: scale(1.1);
-        filter: drop-shadow(0 0 2em #61dafbaa);
-        transition: all 0.5s ease-in;
-    }
-    .myCodeSpace{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-}
 
 .getmyPortfolio:nth-child(2),
 .getmyPortfolio:nth-child(4) {
@@ -66,12 +34,12 @@ body {
     /* Add box-shadow for a blue ring */
 }
 
-
-.myheader img:hover{
+ 
+.myheader:hover{
     filter: drop-shadow(0 0 2em #61dafbaa);
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-}
+} 
 
 /* Add this CSS to your stylesheets */
 .fade-in-animation {
@@ -87,13 +55,10 @@ body {
 
 /* my breackpoint for mobile */
 @media only screen and (max-width: 480px) {
-    .myheader {
-        color: blueviolet;
-        background-color: blueviolet;
-        display: flex;
-    }
     body {
         border : 2px solid black; 
         width: 90%;
+        margin: 0 auto;
+
     }
 }

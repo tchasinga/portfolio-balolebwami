@@ -40,10 +40,10 @@ const Abouts = () => {
 
   return (
     <div>
-      <div className="font-poppins font-sans flex-col px-32 mt-32 w-full gap-14">
+      <div className="font-poppins font-sans static flex-col px-32 mt-32 w-full gap-14">
         <div className="">
         <h1
-            className={`text-5xl font-bold text-white fade-in-animation ${isTextVisible ? 'show' : ''}`}
+            className={`text-5xl  font-bold text-white fade-in-animation ${isTextVisible ? 'show' : ''}`}
           >
             <span className="text-2xl text-gray-700">{currentText}</span> <br />
             Full Stack Developer <br />
