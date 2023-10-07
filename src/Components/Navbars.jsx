@@ -57,6 +57,7 @@ const Navbars = () => {
         open ? "right-0" : "right-[-100%]"
       }`}
         >
+          
           <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
             {menuLinks?.map((menu, i) => (
               <li
