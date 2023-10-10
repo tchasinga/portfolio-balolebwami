@@ -34,6 +34,7 @@ body {
     /* Add box-shadow for a blue ring */
 }
 
+
  
 .myheader:hover{
     filter: drop-shadow(0 0 2em #61dafbaa);
@@ -51,6 +52,44 @@ body {
     opacity: 1;
   }
   
+  .GridElement{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+  }
+  .GridElement > div{
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+
+  .getElementSkills{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+  }
+
+  .getElementSkills > div{
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  /* .parent img{
+   height: 100px;
+   width: 100px;
+   border-radius: 100px;
+   margin-top:-75px;
+   border: 5px solid rgb(40, 40, 131); 
+  position: relative;
+  padding: 5px ;
+  } */
+
+
+
 /* Change Image ANIMATION */
 .image-slider__image{
   /* give it delay of 5 second */
@@ -58,11 +97,12 @@ body {
 }
 
 /* my breackpoint for mobile */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 468px){
     body {
         border : 2px solid black; 
         width: 90%;
         margin: 0 auto;
-
     }
+    
+  
 }
