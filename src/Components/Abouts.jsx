@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Lottie from 'lottie-react';
 import AnimationCode from '../Animation/animation_ln1qjn0wCodeHome.json';
 import Portfolio from './Portfolio';
-import '../index.css'
+import '../index.css';
+import MySkills from './GetSkills';
 
 const Abouts = () => {
   const textOptions = [
@@ -42,7 +43,7 @@ const Abouts = () => {
     <div>
       <div className="font-poppins font-sans static flex-col px-32 mt-32 w-full gap-14">
         <div className="">
-        <h1
+          <h1
             className={`text-5xl  font-bold text-white fade-in-animation ${isTextVisible ? 'show' : ''}`}
           >
             <span className="text-2xl text-gray-700">{currentText}</span> <br />
@@ -54,6 +55,7 @@ const Abouts = () => {
           <div className="w-6/12 hover:-rotate-6 cursor-pointer">
             <Lottie animationData={AnimationCode} />
           </div>
+          
           <div className="flex-col w-3/6 h-3/6">
             <h3 className="mb-4 text-2xl text-white">About me...</h3>
             <p className="text-gray-500 text-sm font-sans">
@@ -68,6 +70,7 @@ const Abouts = () => {
         </div>
       </div>
       <Portfolio />
+      <MySkills />
     </div>
   );
 };

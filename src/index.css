@@ -17,7 +17,7 @@ body {
 *{
     scroll-behavior: smooth;
     transition: all 0.5s ease;
-    font-family: 'Poppins', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 
@@ -51,7 +51,11 @@ body {
     opacity: 1;
   }
   
-
+/* Change Image ANIMATION */
+.image-slider__image{
+  /* give it delay of 5 second */
+  animation: slide 5s ease-in-out infinite;
+}
 
 /* my breackpoint for mobile */
 @media only screen and (max-width: 480px) {
