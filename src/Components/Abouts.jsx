@@ -41,8 +41,8 @@ const Abouts = () => {
 
   return (
     <div>
-      <div className="font-poppins font-sans static flex-col px-32 mt-32 w-full gap-14">
-        <div className="">
+      <div className="font-poppins container font-sans static flex-col px-32 mt-32 w-full gap-14">
+        <div className="mainH1">
           <h1
             className={`text-5xl  font-bold text-white fade-in-animation ${isTextVisible ? 'show' : ''}`}
           >
@@ -52,11 +52,11 @@ const Abouts = () => {
           </h1>
         </div>
         <div className="myCodeSpace flex mt-32 gap-6 items-center">
-          <div className="w-6/12 hover:-rotate-6 cursor-pointer">
+          <div className="w-full hover:-rotate-6 cursor-pointer">
             <Lottie animationData={AnimationCode} />
           </div>
           
-          <div className="flex-col w-3/6 h-3/6">
+          <div className="flex-col w-full">
             <h3 className="mb-4 text-2xl text-white">About me...</h3>
             <p className="text-gray-500 text-sm font-sans">
               I'm a Full Stack Developer with a passion for learning new technologies and<br />

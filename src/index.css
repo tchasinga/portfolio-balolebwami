@@ -106,12 +106,52 @@ body {
 }
 
 /* my breackpoint for mobile */
-@media only screen and (max-width: 468px){
-    body {
-        border : 2px solid black; 
-        width: 90%;
-        margin: 0 auto;
-    }
-    
+/* Responsive styles for screens with a maximum width of 468px */
+@media only screen and (max-width: 468px) {
   
+  body{
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid #61dafb;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+
+  .mainH1 {
+    width: 100%;
+    left: 0;
+    text-align: center;
+    border: 2px solid #61dafb;
+  }
+
+  .mainH1 h1 {
+    font-size: 3rem;
+
+  }
+
+  .myCodeSpace {
+    flex-direction: column;
+    gap: 2rem;
+    border: 2px solid #61dafb;
+    width: 100%;
+  }
+
+  .myCodeSpace {
+    width: 100%;
+  }
+
+  .myCodeSpace .w-3/6 {
+    width: 100%;
+    height: auto;
+  }
+
+  .myCodeSpace h3 {
+    font-size: 2rem;
+  }
+
+  .myCodeSpace p {
+    font-size: 1.2rem;
+  }
 }
