@@ -30,7 +30,9 @@ body {
 }
 
 .myImgPortfolio {
-    border-radius: 50px;
+    border-radius: 3px;
+    width: 50%;
+    height: auto;
     /* Add box-shadow for a blue ring */
 }
 
@@ -98,13 +100,6 @@ body {
   } */
 
 
-
-/* Change Image ANIMATION */
-.image-slider__image{
-  /* give it delay of 5 second */
-  animation: slide 5s ease-in-out infinite;
-}
-
 /* my breackpoint for mobile */
 /* Responsive styles for screens with a maximum width of 468px */
 @media only screen and (max-width: 468px) {
@@ -154,6 +149,94 @@ body {
   .myCodeSpace p {
     font-size: 1.2rem;
   }
+/* new posrtfolio side */
+.getmyPortfolio:nth-child(1),
+.getmyPortfolio:nth-child(2),
+.getmyPortfolio:nth-child(3),
+.getmyPortfolio:nth-child(4) {
+ display: flex;
+ flex-direction: column;
+ border: 2px solid #61dafb;
+ width: 100%;
+ border-radius: 0px;
+}
+
+.font-poppins {
+  font-size: 0.9rem;
+}
+
+.text-3xl {
+  font-size: 2rem;
+}
+
+.gap-14 {
+  gap: 1rem;
+}
+
+.gap-3 {
+  gap: 0.5rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.px-32 {
+  padding: 0 1rem;
+}
+
+.mt-32 {
+  margin-top: 2rem;
+}
+
+.gap-6 {
+  gap: 0.5rem;
+}
+
+.mt-6 {
+  margin-top: 1rem;
+}
+
+.text-2xl {
+  font-size: 1.3rem;
+}
+
+.w-10 {
+  width: 1rem;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.gap-3 {
+  gap: 0.5rem;
+}
+
+.mt-10 {
+  margin-top: 1rem;
+}
+
+.text-blue-800 {
+  color: #1a202c;
+}
+
+.text-blue-200 {
+  color: #cbd5e0;
+}
+
+.myImgPortfolio {
+  max-width: 100%;
+  height: auto;
+}
 
   
 }

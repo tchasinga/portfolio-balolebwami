@@ -13,12 +13,12 @@ const Portfolio = () => {
                         <li>Full-stack</li>
                     </ul>
                 </div>
-                <div className="">
+                <div className="contingPortfolion">
                     {
                         options && options.map((getElement) => {
                            return (
-                              <div key={getElement.id} className=" getmyPortfolio  flex w-full gap-3 mt-10">
-                                <img src={getElement.UrlImg} alt={getElement.title} className="w-2/4 myImgPortfolio" srcset="" />
+                              <div key={getElement.id} className=" getmyPortfolio  flex gap-3 mt-10">
+                                <img src={getElement.UrlImg} alt={getElement.title} className="w-full myImgPortfolio" srcset="" />
                                 <div className="">
                                     <h3 className="text-2xl font-bold text-blue-800">{getElement.title}</h3>
                                     <hr  className="w-10  p-1 mt-1 text-blue-800"/>
