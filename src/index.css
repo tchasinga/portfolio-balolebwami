@@ -142,7 +142,7 @@ body {
     width: 100%;
   }
 
-  .myCodeSpace .w-3/6 {
+  .myCodeSpace {
     width: 100%;
     height: auto;
   }
@@ -154,4 +154,6 @@ body {
   .myCodeSpace p {
     font-size: 1.2rem;
   }
+
+  
 }
