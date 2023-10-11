@@ -238,5 +238,19 @@ body {
   height: auto;
 }
 
-  
+/* Code Service side more making responsive of Service */
+.GridElement{
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.getElementSkills{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 1rem;
+  padding: 0;
+}
 }
