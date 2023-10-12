@@ -155,7 +155,9 @@ body {
 .getmyPortfolio:nth-child(1),
 .getmyPortfolio:nth-child(2),
 .getmyPortfolio:nth-child(3),
-.getmyPortfolio:nth-child(4) {
+.getmyPortfolio:nth-child(4),
+.getmyPortfolio:nth-child(5),
+.getmyPortfolio:nth-child(6){
  display: flex;
  flex-direction: column;
  border: 2px solid #61dafb;
