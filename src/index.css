@@ -24,16 +24,18 @@ body {
 /* my breackpoint for tablet */
 
 .getmyPortfolio:nth-child(2),
-.getmyPortfolio:nth-child(4) {
+.getmyPortfolio:nth-child(4),
+.getmyPortfolio:nth-child(6) {
  display: flex;
  flex-direction: row-reverse;
 }
 
 .myImgPortfolio {
-    border-radius: 3px;
+    border-radius: 10px;
     width: 50%;
     height: auto;
     /* Add box-shadow for a blue ring */
+    
 }
 
 
