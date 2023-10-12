@@ -8,6 +8,8 @@ import NextJs from '../Icon/nextjs.png'
 import NodeJs from '../Icon/nodejs.png'
 import ReactJsx from '../Icon/reactjs.png'
 import tailWindCss from '../Icon/tailwindcss.png'
+import figma from '../Icon/figma.png'
+import Footer from './Footer';
 
 const Languagues = () => {
   const skillsIcons = [
@@ -43,6 +45,12 @@ const Languagues = () => {
       MyCodeLanguage: tailWindCss,
       LanguagesCxx: 'TailwindCss' 
     },
+
+    {
+      MyCodeLanguage: figma,
+      LanguagesCxx: 'Figma' 
+    },
+
   ];
 
   return (
@@ -64,6 +72,7 @@ const Languagues = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </>
   );
 };
