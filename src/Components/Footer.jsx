@@ -10,7 +10,7 @@ import Lottie from 'lottie-react'
 const Footer = () =>{
   return (
      <footer className='myfooter mt-32 px-32'>
-         <h1 className='flex justify-center  text-3xl p-14 font-bold'>CONTACT</h1>
+         <h1 className='flex justify-center  text-3xl p-14 font-bold'>CONTACT...</h1>
          <div className='flex getColomn justify-between mt-14'>
              <div className='flex flex-col  w-full getWidth'>
                 <h3 className='text-white text-xl font-semibold'>For more information</h3>
