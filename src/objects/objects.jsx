@@ -6,7 +6,7 @@ const options =[
     {
         id : 1,
         title : "System Manager",
-        UrlImg : "../src/project/ProjectOne.png",
+        UrlImg : "/src/img/IMG_8669.jpg",
         description : "System Manager is responsible for the management of the system. It is also responsible for the maintenance of the system.",
     },
 
