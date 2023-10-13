@@ -1,6 +1,22 @@
 import options from "../objects/objects";
+import  ScrollReveal  from "scrollreveal";
+import { useEffect } from "react";
+
+const initScrollReveal = () => {
+    ScrollReveal().reveal(".getmyPortfolio", {
+      delay: 300,
+      distance: "50px",
+      origin: "bottom",
+      easing: "cubic-bezier(0.5, 0, 0, 1)",
+      reset: true,
+    });
+  };
 
 const Portfolio = () => {
+    useEffect(() => {
+        initScrollReveal();
+      }, []);
+    
     return(
         <div>
             <div className="font-poppins font-sans  flex-col px-32 mt-32 w-full gap-14">
