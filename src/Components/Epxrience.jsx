@@ -1,4 +1,5 @@
-import React from 'react'; // Import React if not already imported
+import React, { useEffect } from 'react'; // Import React if not already imported
+import ScrollReveal from 'scrollreveal';
 
 import myHtmlParser from "../Icon/html.png";
 import Java from "../Icon/java.png";
@@ -10,6 +11,8 @@ import ReactJsx from '../Icon/reactjs.png'
 import tailWindCss from '../Icon/tailwindcss.png'
 import figma from '../Icon/figma.png'
 import Footer from './Footer';
+
+
 
 const Languagues = () => {
   const skillsIcons = [
@@ -53,21 +56,36 @@ const Languagues = () => {
 
   ];
 
+  useEffect(() => {
+    const options = {
+      origin: 'bottom',
+      distance: '30px',
+      duration: 2000,
+      reset: true,
+    };
+
+    const sr = ScrollReveal(options);
+
+    sr.reveal('.home-text', { delay: 900, origin: 'bottom' });
+    sr.reveal('.paraGet', { delay: 800, origin: 'bottom' });
+   // sr.reveal('.button, .paraOne, .paraTwo, .paraThree', { delay: 400, origin: 'bottom' });
+  }, []);
+
   return (
     <>
-      <div className="px-32 mt-32">
-        <h1 className="flex justify-center text-2xl font-bold text-white">
+      <div className="px-32 mt-32 c">
+        <h1 className=" flex justify-center text-2xl font-bold text-white">
           My Skills
         </h1>
         <div className="getElementSkills">
           {skillsIcons.map((skillIcon, index) => (
-            <div className="flex flex-col justify-center  items-center " key={index}>
+            <div className="home-text flex flex-col justify-center  items-center " key={index}>
               <img
                 src={skillIcon.MyCodeLanguage}
                 alt={skillIcon.LanguagesCxx}
-                className="w-20 h-20"
+                className="w-20 h-20 ImgSideScroll"
               />
-              <p className="text-white">{skillIcon.LanguagesCxx}</p>
+              <p className="paraGet text-white gestioSIde">{skillIcon.LanguagesCxx}</p>
             </div>
           ))}
         </div>
