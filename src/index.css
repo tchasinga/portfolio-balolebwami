@@ -109,7 +109,6 @@ body {
   body{
     width: 90%;
     margin: 0 auto;
-    border: 2px solid #61dafb;
   }
   
   .container {
@@ -120,7 +119,6 @@ body {
     width: 100%;
     left: 0;
     text-align: center;
-    border: 2px solid #61dafb;
   }
 
   .mainH1 h1 {
@@ -131,7 +129,6 @@ body {
   .myCodeSpace {
     flex-direction: column;
     gap: 2rem;
-    border: 2px solid #61dafb;
     width: 100%;
   }
 
