@@ -44,11 +44,11 @@ const options =[
 
     {
         id : 5,
-        title : "S",
+        title : "System manager",
         UrlImg : projectFive,
-        description : "System Manager is responsible for the management of the system. It is also responsible for the maintenance of the system.",
-        getView : "https://personalsblogsdata.netlify.app/",
-        getGithub : "https://github.com/tchasinga/personal-blogs"
+        description : "System Manager is responsible for the management of the system. It is also responsible for the maintenance of the system, uisng MERN stack",
+        getView : "https://tasking-management.onrender.com/",
+        getGithub : "https://github.com/tchasinga/system-manager"
     },
 
 ]
