@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'; // Import React if not already imported
-import ScrollReveal from 'scrollreveal';
+import React from 'react'; // Import React if not already imported
+// import ScrollReveal from 'scrollreveal';
 
 import myHtmlParser from "../Icon/html.png";
 import Java from "../Icon/java.png";
@@ -56,20 +56,20 @@ const Languagues = () => {
 
   ];
 
-  useEffect(() => {
-    const options = {
-      origin: 'bottom',
-      distance: '30px',
-      duration: 2000,
-      reset: true,
-    };
+  // useEffect(() => {
+  //   const options = {
+  //     origin: 'bottom',
+  //     distance: '30px',
+  //     duration: 2000,
+  //     reset: true,
+  //   };
 
-    const sr = ScrollReveal(options);
+  //   const sr = ScrollReveal(options);
 
-    sr.reveal('.home-text', { delay: 900, origin: 'bottom' });
-    sr.reveal('.paraGet', { delay: 800, origin: 'bottom' });
+  //   sr.reveal('.home-text', { delay: 900, origin: 'bottom' });
+  //   sr.reveal('.paraGet', { delay: 800, origin: 'bottom' });
    // sr.reveal('.button, .paraOne, .paraTwo, .paraThree', { delay: 400, origin: 'bottom' });
-  }, []);
+  // }, []);
 
   return (
     <>

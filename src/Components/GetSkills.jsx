@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Lottie from "lottie-react";
-import ScrollReveal from "scrollreveal";
+// import ScrollReveal from "scrollreveal";
 import "../index.css";
 import AnimationCode from "../assets/animation_fronend.json";
 import AnimationBackend from "../assets/animation_Backend.json";
@@ -8,20 +8,20 @@ import AnimationCodeJson from "../assets/animation_ApiJson.json";
 import AnimationDatabse from "../assets/animation_Database.json";
 import Languagues from "./Epxrience";
 
-const initScrollReveal = () => {
-  ScrollReveal().reveal(".parent", {
-    delay: 300,
-    distance: "50px",
-    origin: "bottom",
-    easing: "cubic-bezier(0.5, 0, 0, 1)",
-    reset: true,
-  });
-};
+// const initScrollReveal = () => {
+//   ScrollReveal().reveal(".parent", {
+//     delay: 300,
+//     distance: "50px",
+//     origin: "bottom",
+//     easing: "cubic-bezier(0.5, 0, 0, 1)",
+//     reset: true,
+//   });
+// };
 
 const MySkills = () => {
-  useEffect(() => {
-    initScrollReveal();
-  }, []);
+  // useEffect(() => {
+  //   initScrollReveal();
+  // }, []);
 
   return (
     <div className="">

@@ -6,25 +6,25 @@ import Gmail from '/src/img/3d-fluency-gmail-logo.png'
 import WhatSapp from '/src/img/icons8-whatsapp-480.png'
 import Contactus from '/src/assets/animation_contactus.json'
 import Lottie from 'lottie-react'
-import ScrollReveal from 'scrollreveal'
+// import ScrollReveal from 'scrollreveal'
 
 
 const Footer = () =>{
 
-    useEffect(() => {
-        const options = {
-          origin: 'bottom',
-          distance: '30px',
-          duration: 2000,
-          reset: true,
-        };
+    // useEffect(() => {
+    //     const options = {
+    //       origin: 'bottom',
+    //       distance: '30px',
+    //       duration: 2000,
+    //       reset: true,
+    //     };
     
-        const sr = ScrollReveal(options);
+    //     const sr = ScrollReveal(options);
     
-        sr.reveal('.contact', { delay: 900, origin: 'bottom' });
-        sr.reveal('.paraThree', { delay: 800, origin: 'bottom' });
-       // sr.reveal('.button, .paraOne, .paraTwo, .paraThree', { delay: 400, origin: 'bottom' });
-      }, []);
+    //     sr.reveal('.contact', { delay: 900, origin: 'bottom' });
+    //     sr.reveal('.paraThree', { delay: 800, origin: 'bottom' });
+    //    // sr.reveal('.button, .paraOne, .paraTwo, .paraThree', { delay: 400, origin: 'bottom' });
+    //   }, []);
 
 
   return (

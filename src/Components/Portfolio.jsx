@@ -1,21 +1,21 @@
 import options from "../objects/objects";
-import  ScrollReveal  from "scrollreveal";
-import { useEffect } from "react";
+// import  ScrollReveal  from "scrollreveal";
+// import { useEffect } from "react";
 
-const initScrollReveal = () => {
-    ScrollReveal().reveal(".getmyPortfolio", {
-      delay: 300,
-      distance: "50px",
-      origin: "bottom",
-      easing: "cubic-bezier(0.5, 0, 0, 1)",
-      reset: true,
-    });
-  };
+// const initScrollReveal = () => {
+//     ScrollReveal().reveal(".getmyPortfolio", {
+//       delay: 300,
+//       distance: "50px",
+//       origin: "bottom",
+//       easing: "cubic-bezier(0.5, 0, 0, 1)",
+//       reset: true,
+//     });
+//   };
 
 const Portfolio = () => {
-    useEffect(() => {
-        initScrollReveal();
-      }, []);
+    // useEffect(() => {
+    //     initScrollReveal();
+    //   }, []);
     
     return(
         <div>
@@ -39,7 +39,10 @@ const Portfolio = () => {
                                     <h3 className="text-2xl font-bold text-blue-800">{getElement.title}</h3>
                                     <hr  className="w-10  p-1 mt-1 text-blue-800"/>
                                     <p>{getElement.description}</p>
-                                    <a href={getElement.url} target="_blank" rel="noopener noreferrer" className="text-blue-200">View</a>
+                                  <div className="gap-6 flex mt-6">
+                                  <a href={getElement.getView} target="_blank" rel="noopener noreferrer" className="text-blue-200 gap-6">View</a>
+                                    <a href={getElement.getGithub} target="_blank" rel="noopener noreferrer" className="text-blue-200">Github</a>
+                                  </div>
                                 </div>
                               </div>
                            ) 
