@@ -33,7 +33,7 @@ const Portfolio = () => {
                     {
                         options && options.map((getElement) => {
                            return (
-                              <div key={getElement.id} className=" getmyPortfolio  flex gap-3 mt-10">
+                              <div key={getElement.id} className="getmyPortfolio  flex gap-3 mt-10">
                                 <img src={getElement.UrlImg} alt={getElement.title} className="w-full myImgPortfolio" srcset="" />
                                 <div className="">
                                     <h3 className="text-2xl font-bold text-blue-800">{getElement.title}</h3>
@@ -41,7 +41,7 @@ const Portfolio = () => {
                                     <p>{getElement.description}</p>
                                   <div className="gap-6 flex mt-6">
                                   <a href={getElement.getView} target="_blank" rel="noopener noreferrer" className="text-blue-200 gap-6">View</a>
-                                    <a href={getElement.getGithub} target="_blank" rel="noopener noreferrer" className="text-blue-200">Github</a>
+                                  <a href={getElement.getGithub} target="_blank" rel="noopener noreferrer" className="text-blue-200">Github</a>
                                   </div>
                                 </div>
                               </div>
