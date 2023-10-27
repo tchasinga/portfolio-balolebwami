@@ -20,21 +20,13 @@ const Portfolio = () => {
     return(
         <div>
             <div className="font-poppins font-sans  flex-col px-32 mt-32 w-full gap-14">
-                <h3 className="flex justify-center text-white text-3xl">Portfolio</h3>
-                <div className="gap-3">
-                    <ul className="flex gap-6 justify-center mt-6 cursor-pointer text-blue-200">
-                        <li>Website</li>
-                        <li>Editing-video</li>
-                        <li>Web-design</li>
-                        <li>Full-stack</li>
-                    </ul>
-                </div>
+                <h3 className="flex justify-center text-white text-3xl">My achived project</h3>
                 <div className="contingPortfolion">
                     {
                         options && options.map((getElement) => {
                            return (
                               <div key={getElement.id} className="getmyPortfolio  flex gap-3 mt-10">
-                                <img src={getElement.UrlImg} alt={getElement.title} className="w-full myImgPortfolio" srcset="" />
+                                <img src={getElement.UrlImg} alt={getElement.title} className="w-full myImgPortfolio"/>
                                 <div className="">
                                     <h3 className="text-2xl font-bold text-blue-800">{getElement.title}</h3>
                                     <hr  className="w-10  p-1 mt-1 text-blue-800"/>
