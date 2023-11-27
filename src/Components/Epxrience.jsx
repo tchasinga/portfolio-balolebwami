@@ -1,4 +1,4 @@
-import React from 'react'; // Import React if not already imported
+
 // import ScrollReveal from 'scrollreveal';
 
 import myHtmlParser from "../Icon/html.png";
@@ -11,6 +11,8 @@ import ReactJsx from '../Icon/reactjs.png'
 import tailWindCss from '../Icon/tailwindcss.png'
 import figma from '../Icon/figma.png'
 import Footer from './Footer';
+import express from '../Icon/express-js.png'
+import mysql from '../Icon/mysql.png'
 
 
 
@@ -53,6 +55,15 @@ const Languagues = () => {
       MyCodeLanguage: figma,
       LanguagesCxx: 'Figma' 
     },
+      
+      {
+        MyCodeLanguage: express,
+        LanguagesCxx: 'ExpressJs' 
+      },
+      {
+        MyCodeLanguage: mysql,
+        LanguagesCxx: 'MySql' 
+      },
 
   ];
 

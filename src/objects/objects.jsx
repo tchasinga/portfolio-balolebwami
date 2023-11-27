@@ -3,6 +3,7 @@ import projectTwo from '../project/DesignTwo.png'
 import projectThree from '../project/DesignThree.png'
 import projectFour from '../project/DesignFour.png'
 import projectFive from '../project/DesignFive.png'
+import projectSix from '../project/ScreenshotStuff.png'
 
 const options =[
     {
@@ -44,12 +45,20 @@ const options =[
 
     {
         id : 5,
-        title : "System manager",
+        title : "workours-management",
         UrlImg : projectFive,
         description : "System Manager is responsible for the management of the system. It is also responsible for the maintenance of the system, uisng MERN stack",
-        getView : "https://tasking-management.onrender.com/",
+        getView : "https://workours-management.onrender.com/",
         getGithub : "https://github.com/tchasinga/system-manager"
     },
+    {
+        id : 6,
+        title : "Stuff-seller",
+        UrlImg : projectSix,
+        description : "Stuff is a website that help you to get close of your own data or information security, and it can used as to-do list management",
+        getView : "https://stuff-seller.netlify.app/",
+        getGithub : "https://github.com/tchasinga/e-comerce-site"
+    }
 
 ]
 
