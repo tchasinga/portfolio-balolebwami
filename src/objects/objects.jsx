@@ -4,6 +4,7 @@ import projectThree from "../project/DesignThree.png";
 import projectFour from "../project/DesignFour.png";
 import projectFive from "../project/DesignFive.png";
 import projectSix from "../project/ScreenshotStuff.png";
+import projectSeven from "../project/ProjectsBGSeven.png";
 
 const options = [
   {
@@ -63,6 +64,15 @@ const options = [
       "Stuff is a website that help you to get close of your own data or information security, and it can used as to-do list management",
     getView: "https://stuff-seller.netlify.app/",
     getGithub: "https://github.com/tchasinga/e-comerce-site",
+  },
+  {
+    id: 7,
+    title: "LandEstate",
+    UrlImg: projectSeven,
+    description:
+      "A Land Estate Typically Refers To A Large Area Of Land That Is Planned And Developed For Residential Or Commercial Purposes. These Estates Are Designed To Accommodate A Community, Providing Space For Housing, Amenities, And Infrastructure. The Purpose Of A Land Estate Is Multifaceted, Encompassing Both Economic And Social Objectives.",
+    getView: "https://landind-estate-service.onrender.com/",
+    getGithub: "https://github.com/tchasinga/Real-Estate-house-Marketplace"  
   },
 ];
 
