@@ -13,12 +13,17 @@
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.16",
     "framer-motion": "^10.16.4",
+    "jsonfile": "^6.1.0",
     "lottie-react": "^2.4.0",
+    "moment": "^2.29.4",
     "postcss-cli": "^10.1.0",
+    "random": "^4.1.0",
+    "random-js": "^2.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
-    "scrollreveal": "^4.0.9"
+    "scrollreveal": "^4.0.9",
+    "simple-git": "^3.21.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
