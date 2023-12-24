@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+/* .logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+} */
+body {
+    font-family: 'Poppins', sans-serif;
+    --tw-bg-opacity: 1;
+    background-color: rgb(23 37 84 / var(--tw-bg-opacity));
+}
+
+*{
+    scroll-behavior: smooth;
+    transition: all 0.5s ease;
+    font-family: "Poppins" , sans-serif;
+}
+
+
+/* my breackpoint for tablet */
+
+.getmyPortfolio:nth-child(2),
+.getmyPortfolio:nth-child(4),
+.getmyPortfolio:nth-child(6) {
+ display: flex;
+ flex-direction: row-reverse;
+}
+
+.myImgPortfolio {
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    /* Add box-shadow for a blue ring */
+    
+}
+
+
+ 
+.myheader:hover{
+    filter: drop-shadow(0 0 2em #61dafbaa);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+} 
+
+/* Add this CSS to your stylesheets */
+.fade-in-animation {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fade-in-animation.show {
+    opacity: 1;
+  }
+  
+  .GridElement{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+  }
+  .GridElement > div{
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+
+  .getElementSkills{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 1rem;
+    padding: 5rem;
+  }
+
+  .getElementSkills > div{
+    border-radius: 100px;
+    height: 150px;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: all 0.4s ease-in;
+  }
+
+  .getElementSkills > div:hover{
+    transform: scale(1.1);
+    border: 4px solid #61dafb;
+    cursor: pointer;
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+
+  /* .parent img{
+   height: 100px;
+   width: 100px;
+   border-radius: 100px;
+   margin-top:-75px;
+   border: 5px solid rgb(40, 40, 131); 
+  position: relative;
+  padding: 5px ;
+  } */
+
+
+/* my breackpoint for mobile */
+/* Responsive styles for screens with a maximum width of 468px */
+@media only screen and (max-width: 468px) {
+  
+  body{
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+
+  .mainH1 {
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  .mainH1 h1 {
+    font-size: 3rem;
+
+  }
+
+  .myCodeSpace {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .myCodeSpace {
+    width: 100%;
+  }
+
+  .myCodeSpace {
+    width: 100%;
+    height: auto;
+  }
+
+  .myCodeSpace h3 {
+    font-size: 2rem;
+  }
+
+  .myCodeSpace p {
+    font-size: 1.2rem;
+  }
+/* new posrtfolio side */
+.getmyPortfolio:nth-child(1),
+.getmyPortfolio:nth-child(2),
+.getmyPortfolio:nth-child(3),
+.getmyPortfolio:nth-child(4),
+.getmyPortfolio:nth-child(5),
+.getmyPortfolio:nth-child(6),
+.getmyPortfolio:nth-child(7)
+{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ border-radius: 0px;
+}
+
+.font-poppins {
+  font-size: 0.9rem;
+}
+
+.text-3xl {
+  font-size: 2rem;
+}
+
+.gap-14 {
+  gap: 1rem;
+}
+
+.gap-3 {
+  gap: 0.5rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.px-32 {
+  padding: 0 1rem;
+}
+
+.mt-32 {
+  margin-top: 2rem;
+}
+
+.gap-6 {
+  gap: 0.5rem;
+}
+
+.mt-6 {
+  margin-top: 1rem;
+}
+
+.text-2xl {
+  font-size: 1.3rem;
+}
+
+.w-10 {
+  width: 1rem;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.gap-3 {
+  gap: 0.5rem;
+}
+
+.mt-10 {
+  margin-top: 1rem;
+}
+
+.text-blue-800 {
+  color: #1a202c;
+}
+
+.text-blue-200 {
+  color: #cbd5e0;
+}
+
+.myImgPortfolio {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Code Service side more making responsive of Service */
+.GridElement{
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.getElementSkills{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 1rem;
+  padding: 0;
+}
+}
