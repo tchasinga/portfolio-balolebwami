@@ -5,6 +5,7 @@ import projectFour from "../project/DesignFour.png";
 import projectFive from "../project/DesignFive.png";
 import projectSix from "../project/ScreenshotStuff.png";
 import projectSeven from "../project/ProjectsBGSeven.png";
+import projectEight from "../project/newScreenget.png";
 
 const options = [
   {
@@ -74,6 +75,15 @@ const options = [
     getView: "https://landind-estate-service.onrender.com/",
     getGithub: "https://github.com/tchasinga/Real-Estate-house-Marketplace"  
   },
+
+  {
+    id: 8,
+    title: "Blogs sharing",
+    UrlImg: projectEight,
+    description: "Blogs ideas sharing involves the creation and dissemination of content that inspires, informs, or entertains an audience. Content creators share thoughts, experiences, and insights on diverse topic…",
+    getView: "https://blogs-sharing-ideas.onrender.com",
+    getGithub: "https://github.com/tchasinga/sharing-ideas-blogs"
+  }
 ];
 
 export default options;

@@ -25,7 +25,9 @@ body {
 
 .getmyPortfolio:nth-child(2),
 .getmyPortfolio:nth-child(4),
-.getmyPortfolio:nth-child(6) {
+.getmyPortfolio:nth-child(6),
+.getmyPortfolio:nth-child(8)
+{
  display: flex;
  flex-direction: row-reverse;
 }
@@ -156,6 +158,7 @@ body {
 .getmyPortfolio:nth-child(5),
 .getmyPortfolio:nth-child(6),
 .getmyPortfolio:nth-child(7)
+.getmyPortfolio:nth-child(8)
 {
  display: flex;
  flex-direction: column;
