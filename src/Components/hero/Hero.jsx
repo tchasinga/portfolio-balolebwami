@@ -16,7 +16,7 @@ animate: {
     opacity:1,
     transition: {
       duration: 1,
-      staggerChildren: 0.1,
+      staggerChildren: 1,
     }
   }
 }
