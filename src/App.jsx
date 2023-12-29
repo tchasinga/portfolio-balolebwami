@@ -6,17 +6,17 @@ function App() {
 
   return (
     <>
-      <section>
+      <section id='Homepage'>
          <Navbars />
       </section>
 
-      <section>Paralax</section>
+      <section id='Service'>Paralax</section>
       <section>Service</section>
-      <section>Paralax</section>
-      <section>Portfolio01</section>
+      <section id='Skills'>Paralax</section>
+      <section id='Portfolio'>Portfolio01</section>
       <section>Portfolio02</section>
       <section>Portfolio03</section>
-      <section>Contact</section>
+      <section id='Contact'>Contact</section>
     </>
   )
 }
