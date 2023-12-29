@@ -8,8 +8,8 @@ export default function Navbars() {
   return (
     <div className="navbar">
       {/* Side bar */}
+      <Sidebars />
       <div className="wrapper">
-        <Sidebars />
         <motion.span initial={{opacity:0, scale:0.5}} animate={{opacity:1, scale:1}} transition={{duration:0.5}}>Tchasinga Dev</motion.span>
         <div className="social">
           <a href="https://github.com/tchasinga" target="_blank" rel="noopener noreferrer">
