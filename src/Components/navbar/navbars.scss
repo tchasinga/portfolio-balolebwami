@@ -1,3 +1,27 @@
 .navbar{
-    
+    height: 100px;
+    .wrapper{
+        max-width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span{
+            font-weight: bold;
+        }
+
+        .social{
+            display: flex;
+            gap: 10px;
+        }
+
+        .social a{
+            color: #fff;
+            font-size: 22px;
+        }
+        .social a:hover{
+            color: rgb(152, 95, 95);
+        }
+    }  
 }
