@@ -36,7 +36,7 @@ const SliderVariants ={
     x: 0,
   },
   animate: {
-    x: "-220%",
+    x: "-20%",
     transition: {
       duration: 20,
       repeat: Infinity,
@@ -46,7 +46,7 @@ const SliderVariants ={
 }
 
 
-export default function Hero() {
+export default function Heros() {
   return (
     <div className='hero'>
       <div className="wrapper">

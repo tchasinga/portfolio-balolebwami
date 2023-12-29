@@ -1,6 +1,7 @@
-import Hero from './Components/hero/Hero'
-import Navbars from './Components/navbar/Navbars'
-import Parallax from './Components/parallax/Parallax'
+
+import Navbars from './Components/navbar/Navbars.jsx'
+import Parallax from './Components/parallax/Parallax.jsx'
+import Heros from './Components/hero/Hero.jsx'
 // import Test from './Components/Test/Test'
 import './app.scss'
 
@@ -10,7 +11,7 @@ function App() {
     <>
       <section id='Homepage'>
          <Navbars />
-         <Hero />
+         <Heros />
       </section>
 
       <section id='Service'>
