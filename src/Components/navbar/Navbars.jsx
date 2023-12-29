@@ -1,6 +1,7 @@
 import "./navbars.scss";
 import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 import {motion} from 'framer-motion'
+import Sidebars from "../sidebar/Sidebars";
 
 
 export default function Navbars() {
@@ -8,6 +9,7 @@ export default function Navbars() {
     <div className="navbar">
       {/* Side bar */}
       <div className="wrapper">
+        <Sidebars />
         <motion.span initial={{opacity:0, scale:0.5}} animate={{opacity:1, scale:1}} transition={{duration:0.5}}>Tchasinga Dev</motion.span>
         <div className="social">
           <a href="https://github.com/tchasinga" target="_blank" rel="noopener noreferrer">
