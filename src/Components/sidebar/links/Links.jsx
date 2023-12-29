@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 export default function Links() {
   const items = [
     "Homepage",
@@ -7,13 +9,33 @@ export default function Links() {
     "Contact",
   ];
 
+  const variants = {
+    open: {
+      transition: { staggerChildren: 0.1},
+    },
+    closed: {
+      transition: { staggerChildren: 0.05, staggerDirection: -1 },
+    },
+  };
+
+  const itemVariants = {
+    open: {
+      y : 0,
+      opacity: 1,
+    },
+    closed: {
+     y : 150,
+      opacity: 0,
+    },
+  };
+
   return (
-    <div className="links">
+    <motion.div className="links" variants={variants}>
       {items.map((item) => (
-        <a className="font-thin" href={`#${item}`} key={item}>
+        <motion.a className="font-thin" href={`#${item}`} key={item} variants={itemVariants} whileHover={{scale:1.1}} whileTap={{scale:0.5}}>
           {item}
-        </a>
+        </motion.a>
       ))}
-    </div>
+    </motion.div>
   );
 }
