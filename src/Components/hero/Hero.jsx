@@ -18,8 +18,33 @@ animate: {
       duration: 1,
       staggerChildren: 1,
     }
+  },
+   
+  scrollButton: {
+    opacity:0,
+    y:10,
+    transition: {
+      duration: 1,
+      repeat: Infinity,
+      repeatType: 'reverse'
+    }
   }
 }
+
+const SliderVariants ={
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: "-220%",
+    transition: {
+      duration: 20,
+      repeat: Infinity,
+      repeatType: 'mirror'
+    }
+  }
+}
+
 
 export default function Hero() {
   return (
@@ -32,12 +57,12 @@ export default function Hero() {
           <motion.button className="btn" variants={textVaraint}>Hire me</motion.button>
           <motion.button className="btn" variants={textVaraint}>Download CV</motion.button>
         </motion.div>
-        <motion.img variants={textVaraint} src={OneImg2} alt="" />
+        <motion.img variants={textVaraint} src={OneImg2} animate="scrollButton" alt="" />
       </motion.div>
       </div>
-      <div className="slidingTextContainer">
+      <motion.div className="slidingTextContainer" animate="animate" variants={SliderVariants} initial="initial">
         Full Stack Web Developer and Web Designer... 
-      </div>
+      </motion.div>
       <div className="imageContainer">
         <img src={OneImg} alt="" />
       </div>

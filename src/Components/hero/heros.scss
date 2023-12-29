@@ -2,6 +2,7 @@
     height: calc(75vh - 100px);
     overflow: hidden;
     background: linear-gradient(180deg, #0c0c1d, #111132);
+    z-index: -9999;
     position: relative;
 
     .imageContainer{
@@ -62,5 +63,7 @@
          bottom: -120px;
          white-space: nowrap;
          color: #ffffff12;
+         width: 100%;
+
     }
 }
