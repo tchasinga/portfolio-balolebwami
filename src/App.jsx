@@ -1,4 +1,5 @@
 import Navbars from './Components/navbar/Navbars'
+// import Test from './Components/Test/Test'
 import './app.scss'
 
 function App() {
