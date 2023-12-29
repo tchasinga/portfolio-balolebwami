@@ -42,13 +42,25 @@
                     background: transparent;
                     color: #fff;
                     margin:5px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    font-weight: 200;
                 }
             }
+
+            
 
             img{
                 width: 30px;
                 object-fit: cover;
             }
         }
+    }
+    .slidingTextContainer{
+         position: absolute;
+         font-size: 40vh;
+         bottom: -120px;
+         white-space: nowrap;
+         color: #ffffff12;
     }
 }
