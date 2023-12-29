@@ -1,10 +1,21 @@
-
+import Navbars from './Components/navbar/Navbars'
+import './app.scss'
 
 function App() {
 
   return (
     <>
-      <h1 className="text-xl text-red-900">React App</h1>
+      <section>
+         <Navbars />
+      </section>
+
+      <section>Paralax</section>
+      <section>Service</section>
+      <section>Paralax</section>
+      <section>Portfolio01</section>
+      <section>Portfolio02</section>
+      <section>Portfolio03</section>
+      <section>Contact</section>
     </>
   )
 }
