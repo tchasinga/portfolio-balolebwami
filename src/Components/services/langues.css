@@ -24,10 +24,15 @@
 
   @media only screen and (max-width: 738px){
     .getElementSkills{
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        gap: 1rem;
-        padding: 1.9rem;
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 1rem;
+      padding: 1.9rem;
       }
+
+    .getThisClass{
+     margin-bottom: 35rem;
+     margin-top: 5rem;
+    }
     
   }

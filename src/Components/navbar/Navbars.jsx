@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import {motion} from 'framer-motion'
 import Sidebars from "../sidebar/Sidebars";
-import { Link } from 'react-router-dom'
+
 
 
 export default function Navbars() {
@@ -27,9 +27,10 @@ export default function Navbars() {
             <FaFacebook />
           </a>
 
-          <Link to=''>
-             <FaPhone />
-          </Link>
+          <a href="tel:+243 81 00 00 000" target="_blank" rel="noopener noreferrer">
+            <FaPhone />
+            </a>
+
         </div>
       </div>
     </div>
