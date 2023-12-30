@@ -8,7 +8,7 @@ export default function Services() {
     <motion.div className='service'>
          <motion.div className="textContainer">
             <p >
-                I focus on helping in those listed technology
+                I focus on coding in those listed technology
                 <br />and deep practice
             </p>
             <hr />
