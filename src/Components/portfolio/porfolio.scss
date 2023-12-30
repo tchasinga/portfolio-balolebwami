@@ -12,6 +12,8 @@
     text-align: center;
     color: orange;
     font-size: 36px;
+    z-index: -9999;
+
 
 
     .progressBar {
@@ -27,6 +29,8 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: -9999;
+  position: relative;
 
     .wrapper {
       max-width: 1366px;

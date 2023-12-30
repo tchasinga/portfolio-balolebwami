@@ -1,41 +1,44 @@
 
-import Navbars from './Components/navbar/Navbars.jsx'
-import Parallax from './Components/parallax/Parallax.jsx'
-import Heros from './Components/hero/Hero.jsx'
-import './app.scss'
-import Services from './Components/services/Services.jsx'
-import Portfolio from './Components/portfolio/Portfolio.jsx'
-import Contact from './Components/contact/Contact.jsx'
+import { BrowserRouter , Routes, Route } from 'react-router-dom';
+import Navbars from './Components/navbar/Navbars.jsx';
+import Parallax from './Components/parallax/Parallax.jsx';
+import Heros from './Components/hero/Hero.jsx';
+import './app.scss';
+import Services from './Components/services/Services.jsx';
+import Portfolio from './Components/portfolio/Portfolio.jsx';
+import Contact from './Components/contact/Contact.jsx';
 
 function App() {
-
   return (
-    <div>
-      <section id='Homepage'>
-         <Navbars />
-         <Heros />
-      </section>
+    <BrowserRouter>
+      <div>
+        <section id='Homepage'>
+          <Navbars />
+          <Heros />
+        </section>
 
-      <section id='Service'>
-        <Parallax type="service"/>
-      </section>
+        <section id='Service'>
+          <Parallax type="service" />
+        </section>
 
-      <section>
-        <Services />
-      </section>
-      
-      <section id='Skills'><Parallax type="portfolio"/></section>
+        <section>
+          <Services />
+        </section>
 
-      <section id='Portfolio'>
-        <Portfolio />
-      </section>
+        <section id='Skills'>
+          <Parallax type="portfolio" />
+        </section>
 
-      <section id='Contact'>
-        <Contact />
-      </section>
+        <section id='Portfolio'>
+          <Portfolio />
+        </section>
 
-    </div>
-  )
+        <Routes>
+          <Route path="/contacting"  element={<Contact />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

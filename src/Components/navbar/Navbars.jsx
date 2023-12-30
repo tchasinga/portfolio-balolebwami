@@ -1,7 +1,9 @@
 import "./navbars.scss";
 import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
 import {motion} from 'framer-motion'
 import Sidebars from "../sidebar/Sidebars";
+import { Link } from 'react-router-dom'
 
 
 export default function Navbars() {
@@ -17,13 +19,17 @@ export default function Navbars() {
           </a>
           <a href="https://www.linkedin.com/in/tchasingajacques/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
-          </a>
+          </a> 
           <a href="https://www.instagram.com/jacques_balolebwami/" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
           <a href="https://www.facebook.com/jaques.balolebwami" target="_blank" rel="noopener noreferrer">
             <FaFacebook />
           </a>
+
+          <Link to='/'>
+             <FaPhone />
+          </Link>
         </div>
       </div>
     </div>
