@@ -1,6 +1,7 @@
 import Languagues from "./Languagues";
 import "./service.scss";
 import { motion } from "framer-motion";
+import './langues.css'
 
 const variants = {
   initial: {
@@ -35,11 +36,9 @@ export default function Services() {
         </p>
         <hr />
       </motion.div>
-      <motion.div  variants={variants}
-        initial="initial"
-        whileInView='animate'>
+     
         <Languagues />
-      </motion.div>
+
     </motion.div>
   );
 }

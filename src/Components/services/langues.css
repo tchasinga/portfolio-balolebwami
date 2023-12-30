@@ -23,10 +23,14 @@
 
 
   @media only screen and (max-width: 468px){
+    .px-32 {
+      padding-left: 0/* 128px */;
+      padding-right: 0/* 128px */;
+  }
+
 
     .getElementSkills{
-        width: 90%;
-        margin: 0 auto;
+        border: 2px solid black;
     }
 
     .getElementSkills{
@@ -35,4 +39,5 @@
         gap: 1rem;
         padding: 0;
       }
+    
   }

@@ -4,6 +4,7 @@ import Parallax from './Components/parallax/Parallax.jsx'
 import Heros from './Components/hero/Hero.jsx'
 import './app.scss'
 import Services from './Components/services/Services.jsx'
+import Portfolio from './Components/portfolio/Portfolio.jsx'
 
 function App() {
 
@@ -23,10 +24,12 @@ function App() {
       </section>
       
       <section id='Skills'><Parallax type="portfolio"/></section>
-      <section id='Portfolio'>Portfolio01</section>
-      <section>Portfolio02</section>
-      <section>Portfolio03</section>
-      <section id='Contact'>Contact</section>
+
+      <section id='Portfolio'>
+        <Portfolio />
+      </section>
+      
+      {/* <section id='Contact'>Contact</section> */}
     </>
   )
 }
