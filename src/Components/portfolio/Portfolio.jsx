@@ -2,7 +2,9 @@ import './porfolio.scss'; // Assuming correct path to portfolio.scss
 import options from './objects'; // Assuming correct path to objects.js
 import { motion, useScroll, useSpring ,useTransform} from "framer-motion";
 import { useRef } from 'react';
+import '../../index.css'
 import PropTypes from 'prop-types';
+
 
 
 const Single = ({ item }) => {
@@ -24,7 +26,14 @@ const Single = ({ item }) => {
             <motion.div className="textContainer" style={{y}}>
               <h2>{item.title}</h2>
               <p>{item.description}</p>
-              <button>See Demo</button>
+              <div className="flex gap-2 getVing">
+                <a href={item.getView} target="_blank" rel="noopener noreferrer">
+                  <button className="btn">See Live</button>
+                </a>
+                <a href={item.getGithub} target="_blank" rel="noopener noreferrer">
+                  <button className="btn">See Code</button>
+                </a>
+              </div>
             </motion.div>
           </div>
         </div>

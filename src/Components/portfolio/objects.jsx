@@ -64,7 +64,7 @@ const options = [
     UrlImg: projectSix,
     description:
       "Stuff is a website that help you to get close of your own data or information security, and it can used as to-do list management",
-    getView: "https://stuff-seller.netlify.app/",
+    getView: "https://stuff-seller.onrender.com/",
     getGithub: "https://github.com/tchasinga/e-comerce-site",
   },
   {
