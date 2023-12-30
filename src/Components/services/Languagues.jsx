@@ -78,7 +78,7 @@ const Languagues = () => {
 
   return (
     <>
-      <div className="px-32">
+      <div className="max-w-6xl mx-auto degressingthings">
         <div className="getElementSkills">
           {skillsIcons.map((skillIcon, index) => (
             <div

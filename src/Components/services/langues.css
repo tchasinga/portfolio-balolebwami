@@ -22,22 +22,12 @@
   }
 
 
-  @media only screen and (max-width: 468px){
-    .px-32 {
-      padding-left: 0/* 128px */;
-      padding-right: 0/* 128px */;
-  }
-
-
-    .getElementSkills{
-        border: 2px solid black;
-    }
-
+  @media only screen and (max-width: 738px){
     .getElementSkills{
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         gap: 1rem;
-        padding: 0;
+        padding: 1.9rem;
       }
     
   }

@@ -17,15 +17,15 @@ function App() {
           <Heros />
         </section>
 
-        <section id='Service'>
+      <section id='Service'>
           <Parallax type="service" />
-        </section>
+        </section> 
+         
+     <section>
+       <Services />
+     </section>
 
-        <section>
-          <Services />
-        </section>
-
-        <section id='Skills'>
+        {/* <section id='Skills'>
           <Parallax type="portfolio" />
         </section>
 
@@ -35,7 +35,7 @@ function App() {
 
         <Routes>
           <Route path="/contacting"  element={<Contact />} />
-        </Routes>
+        </Routes>   */}
       </div>
     </BrowserRouter>
   );
