@@ -10,12 +10,11 @@ import projectNine from "./project/CloseLast.png";
 
 const options = [
   {
-    id: 0,
+    id: 1,
     title: "Space Travel hub",
     UrlImg: projectOne,
-    description:
-      "Welcome to the Space Travelers' Hub! This is the ultimate destination for all space enthusiasts, travelers, and adventurers. Whether you're a seasoned astronaut, a curious explorer, or just someone with a passion for the cosmos, you've come to the right place. At the Space Travelers' Hub",
-    getView: "https://space-traveling.onrender.com/",
+    description:"Welcome to the Space Travelers' Hub! This is the ultimate destination for all space enthusiasts, travelers, and adventurers. Whether you're a seasoned astronaut, a curious explorer, or just someone with a passion for the cosmos, you've come to the right place. At the Space Travelers' Hub",
+    getView: "https://space-traveling.onrender.com",
     getGithub: "https://github.com/tchasinga/space-travelers",
   },
 

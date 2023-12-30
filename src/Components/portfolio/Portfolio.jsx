@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
 
 
 const Single = ({ item }) => {
+ 
     const ref = useRef();
 
     const { scrollYProgress } = useScroll({
@@ -26,7 +27,9 @@ const Single = ({ item }) => {
             <motion.div className="textContainer" style={{y}}>
               <h2>{item.title}</h2>
               <p>{item.description}</p>
+              
               <div className="flex gap-2 getVing">
+          
                 <a href={item.getView} target="_blank" rel="noopener noreferrer">
                   <button className="btn">See Live</button>
                 </a>
