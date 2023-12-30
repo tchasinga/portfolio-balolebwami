@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import "./parallax.scss";
-// import imgGod from "../Pics/newone.jpg";
 import ImageBG from "../Pics/secondone.jpg";
 import {motion , useScroll, useTransform} from "framer-motion";
 import { useRef } from "react";
