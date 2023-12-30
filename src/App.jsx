@@ -2,7 +2,6 @@
 import Navbars from './Components/navbar/Navbars.jsx'
 import Parallax from './Components/parallax/Parallax.jsx'
 import Heros from './Components/hero/Hero.jsx'
-// import Test from './Components/Test/Test'
 import './app.scss'
 
 function App() {
