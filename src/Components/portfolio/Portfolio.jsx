@@ -2,9 +2,8 @@ import './porfolio.scss'; // Assuming correct path to portfolio.scss
 import options from './objects'; // Assuming correct path to objects.js
 import { motion, useScroll, useSpring ,useTransform} from "framer-motion";
 import { useRef } from 'react';
-
 import PropTypes from 'prop-types';
-import Contact from '../contact/Contact';
+
 
 const Single = ({ item }) => {
     const ref = useRef();
