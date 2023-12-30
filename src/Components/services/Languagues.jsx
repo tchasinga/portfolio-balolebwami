@@ -1,5 +1,3 @@
-// import ScrollReveal from 'scrollreveal';
-
 import myHtmlParser from "./Icon/html.png";
 import Java from "./Icon/java.png";
 import JavaScript from "./Icon/javascript.png";
