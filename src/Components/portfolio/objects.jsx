@@ -10,7 +10,7 @@ import projectNine from "./project/CloseLast.png";
 
 const options = [
   {
-    id: 1,
+    id: 0,
     title: "Space Travel hub",
     UrlImg: projectOne,
     description:
