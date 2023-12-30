@@ -1,8 +1,19 @@
+import Languagues from './Languagues'
+import './service.scss'
+import {motion} from "framer-motion"
+
 
 export default function Services() {
   return (
-    <div>
-        <h1>Services</h1>
-    </div>
+    <motion.div className='service'>
+         <motion.div className="textContainer">
+            <p >
+                I focus on helping in those listed technology
+                <br />and deep practice
+            </p>
+            <hr />
+         </motion.div>
+         <Languagues />
+    </motion.div>
   )
 }

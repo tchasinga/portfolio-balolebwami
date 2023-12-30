@@ -1,0 +1,18 @@
+.service {
+  display: flex;
+  flex-direction: column;
+
+  .textContainer {
+    flex: 1;
+    align-self: flex-end;
+    align-items: center; 
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+
+    hr{
+        width:500px;
+        background-color: lightgray;
+    }
+  }
+}
