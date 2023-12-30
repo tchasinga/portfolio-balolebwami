@@ -1,5 +1,5 @@
 .hero{
-    height: calc(75vh - 100px);
+    height: calc(100vh - 100px);
     overflow: hidden;
     background: linear-gradient(180deg, #0c0c1d, #111132);
     z-index: -9999;
@@ -9,8 +9,13 @@
         height: 100%;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 5%;
     }
+
+    .imageContainer img{
+        height: 100%;
+        object-fit: cover;
+    }   
 
     .wrapper{
      max-width: 1366px;
