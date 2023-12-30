@@ -54,7 +54,9 @@ export default function Heros() {
         <motion.h2 className='uppercase' variants={textVaraint}>tchasinga jack</motion.h2>
         <motion.h1 className='' variants={textVaraint}>Full-stack Web developer</motion.h1>
         <motion.div className="buttons" variants={textVaraint}>
-          <motion.button className="btn" variants={textVaraint}>Hire me</motion.button>
+          <motion.button className="btn" variants={textVaraint}>
+            <a href="https://www.linkedin.com/in/tchasingajacques/">Hire me</a>
+          </motion.button>
           <motion.button className="btn" variants={textVaraint}>Download CV</motion.button>
         </motion.div>
         <motion.img variants={textVaraint} src={OneImg2} animate="scrollButton" alt="" />
