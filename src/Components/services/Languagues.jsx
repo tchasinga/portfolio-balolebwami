@@ -12,6 +12,7 @@ import mysql from "./Icon/mysql.png";
 import Css from "./Icon/css.png";
 import NestJs from "./Icon/nestjs.png";
 import Postgresql from "./Icon/postgresql.png";
+import './langues.css'
 
 const Languagues = () => {
   const skillsIcons = [
