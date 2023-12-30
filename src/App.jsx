@@ -10,7 +10,7 @@ import Contact from './Components/contact/Contact.jsx'
 function App() {
 
   return (
-    <>
+    <div>
       <section id='Homepage'>
          <Navbars />
          <Heros />
@@ -29,11 +29,12 @@ function App() {
       <section id='Portfolio'>
         <Portfolio />
       </section>
-      
+
       <section id='Contact'>
         <Contact />
       </section>
-    </>
+
+    </div>
   )
 }
 

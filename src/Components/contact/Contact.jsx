@@ -37,10 +37,10 @@ const Contact = () => {
         "pX_2hasGmGcuvjXIW"
       )
       .then(
-        (result) => {
+        () => {
           setSuccess(true)
         },
-        (error) => {
+        () => {
           setError(true);
         }
       );

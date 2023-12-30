@@ -1,37 +1,31 @@
 @import url(https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
-html{
-    scroll-behavior: smooth;
-    // transition: all 2s ease;
+html {
     scroll-snap-type: y mandatory;
-}
-
-*{
-    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  * {
     padding: 0;
-    box-sizing: border-box; 
+    margin: 0;
+    box-sizing: border-box;
     font-family: "DM Sans", sans-serif;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-
-}
-
-body{
+  }
+  
+  body {
     background-color: #0c0c1d;
     color: lightgray;
-    height: 900vh;
-}
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  section {
+    height: 100vh
+  }
 
-section{
-    height: 100vh;
-    scroll-snap-align: center ;
-    
-}
-
-section:nth-child(3){
-    height: 110vh;
-}
-
+  section:nth-child(3) {
+   height: 110vh;
+  }

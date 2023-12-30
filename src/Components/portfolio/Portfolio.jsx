@@ -4,6 +4,7 @@ import { motion, useScroll, useSpring ,useTransform} from "framer-motion";
 import { useRef } from 'react';
 
 import PropTypes from 'prop-types';
+import Contact from '../contact/Contact';
 
 const Single = ({ item }) => {
     const ref = useRef();
@@ -15,7 +16,7 @@ const Single = ({ item }) => {
     const y = useTransform(scrollYProgress, [0, 1], [-200, 200]);
   
     return (
-        <section >
+    <section className='mysection'>
         <div className="container">
           <div className="wrapper">
             <div className="imageContainer" ref={ref}>
@@ -64,4 +65,5 @@ export default function Portfolio() {
             ))}
         </div>
     );
+    
 }
