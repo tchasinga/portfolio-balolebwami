@@ -27,7 +27,7 @@ export default function Navbars() {
             <FaFacebook />
           </a>
 
-          <Link to='/'>
+          <Link to=''>
              <FaPhone />
           </Link>
         </div>
