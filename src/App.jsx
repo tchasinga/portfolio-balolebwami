@@ -5,6 +5,7 @@ import Heros from './Components/hero/Hero.jsx'
 import './app.scss'
 import Services from './Components/services/Services.jsx'
 import Portfolio from './Components/portfolio/Portfolio.jsx'
+import Contact from './Components/contact/Contact.jsx'
 
 function App() {
 
@@ -29,7 +30,9 @@ function App() {
         <Portfolio />
       </section>
       
-      {/* <section id='Contact'>Contact</section> */}
+      <section id='Contact'>
+        <Contact />
+      </section>
     </>
   )
 }
