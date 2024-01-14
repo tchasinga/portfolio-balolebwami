@@ -120,6 +120,17 @@ function Project() {
       live: "https://space-traveling.onrender.com",
       source: "https://github.com/tchasinga/space-travelers",
     },
+{
+    id: 10,
+    title: "Fitness room",
+    image: projectNine,
+    details:
+      "Whether it's a small nook or an entire room, homeowners are starting to make home gyms a priority. Engaging in a home fitness routine doesn't mean you need expensive workout equipment; there are several home gym designs and home gym ideas that simply require some creativity, a little bit of ...",
+    // "Budget Tracker is a user-friendly mobile app that empowers individuals to take control of their personal finances. By tracking all transactions in one place, users get an always up-to-date overview of spending - enabling better decisions",
+    techStack: "NextJs,TailwindCss , Anime Css , Swipper",
+    live: "https://fitness-rooms.netlify.app/",
+    source: "https://github.com/tchasinga/gym-rooms",
+  }
   ]);
 
   const sortedProjects = [...projects].sort((a, b) => b.id - a.id);
