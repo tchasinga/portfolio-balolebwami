@@ -8,7 +8,6 @@ import {
 } from "@heroicons/react/24/outline";
 import { LiaEnvelopeSolid } from "react-icons/lia";
 
-
 import projectOne from "../assets/images/projects/CloseLast.png";
 import projectTwo from "../assets/images/projects/DesignTwo.png";
 import projectThree from "../assets/images/projects/DesignThree.png";
@@ -19,25 +18,25 @@ import projectSeven from "../assets/images/projects/ProjectsBGSeven.png";
 import projectEight from "../assets/images/projects/newScreenget.png";
 import projectNine from "../assets/images/projects/DesignOne.png";
 
-
-
 function Project() {
   const [projects, setProjects] = useState([
     {
       id: 1,
       title: "Public Information",
       image: projectOne,
-      details: "Share sensitive information only on official, secure websites. ... The Individuals with Disabilities Education Act (IDEA) is a law that makes available a free appropriate public education to eligible children with disabilities throughout the nation and ensures special education and related ...",
+      details:
+        "Share sensitive information only on official, secure websites. ... The Individuals with Disabilities Education Act (IDEA) is a law that makes available a free appropriate public education to eligible children with disabilities throughout the nation and ensures special education and related ...",
       techStack: "Tailwind Css, Next js, MongoDB, Nodejs ,Express",
-      live:  "https://public-information.netlify.app",
+      live: "https://public-information.netlify.app",
       source: "https://github.com/tchasinga/e-comerce-site",
     },
 
     {
       id: 2,
-      title:"Paint Art",
+      title: "Paint Art",
       image: projectTwo,
-      details:  "Painting is a visual art form that involves the application of pigments or other coloring agents to a surface, such as canvas, paper, or wood, to create an image or design. Paintings can be created using various techniques and styles, and they have been a significant form of artistic",
+      details:
+        "Painting is a visual art form that involves the application of pigments or other coloring agents to a surface, such as canvas, paper, or wood, to create an image or design. Paintings can be created using various techniques and styles, and they have been a significant form of artistic",
       techStack: "Html, Css, Javascript, APis",
       live: "https://tchasinga.github.io/API-capstone-project/dist/",
       source: "https://github.com/tchasinga/API-capstone-project",
@@ -47,7 +46,8 @@ function Project() {
       id: 3,
       title: "Book store",
       image: projectThree,
-      details:  "System Manager is responsible for the management of the system. It is also responsible for the maintenance of the system.",
+      details:
+        "System Manager is responsible for the management of the system. It is also responsible for the maintenance of the system.",
       techStack: "ReactJS, Redux, Route, Tailwind CSS, API",
       live: "https://book-storing.onrender.com/",
       source: "https://github.com/tchasinga/API-capstone-project",
@@ -57,7 +57,8 @@ function Project() {
       id: 4,
       title: "Personal Blogs",
       image: projectFour,
-      details:  "Is personal Data server that help you to get close of your own data or information security, and it can used as to-do list management",
+      details:
+        "Is personal Data server that help you to get close of your own data or information security, and it can used as to-do list management",
       techStack: "Reactjs , APIs , Css",
       live: "https://personalsblogsdata.netlify.app/",
       source: "https://github.com/tchasinga/personal-blogs",
@@ -67,7 +68,8 @@ function Project() {
       id: 5,
       title: "workours-management",
       image: projectFive,
-      details: "System Manager is responsible for the management of the system. It is also responsible for the maintenance of the system, uisng MERN stack",
+      details:
+        "System Manager is responsible for the management of the system. It is also responsible for the maintenance of the system, uisng MERN stack",
       techStack: "React, Tailwind css, MongoDB, Express, Nodejs",
       live: "https://workours-management.onrender.com/",
       source: "https://github.com/tchasinga/system-manager",
@@ -75,40 +77,44 @@ function Project() {
 
     {
       id: 6,
-      title:  "Stuff-seller",
+      title: "Stuff-seller",
       image: projectSix,
-      details: "Stuff is a website that help you to get close of your own data or information security, and it can used as to-do list management",
+      details:
+        "Stuff is a website that help you to get close of your own data or information security, and it can used as to-do list management",
       techStack: "Mui, TailwindCss, Reactjs, Oop",
       live: "https://stuff-seller.onrender.com/",
-      source:"https://github.com/tchasinga/e-comerce-site",
+      source: "https://github.com/tchasinga/e-comerce-site",
     },
 
     {
       id: 7,
       title: "LandEstate",
       image: projectSeven,
-      details:  "A Land Estate Typically Refers To A Large Area Of Land That Is Planned And Developed For Residential Or Commercial Purposes. These Estates Are Designed To Accommodate A Community, Providing Space For Housing, Amenities, And Infrastructure. The Purpose Of A Land Estate Is Multifaceted, Encompassing Both Economic And Social Objectives.",
+      details:
+        "A Land Estate Typically Refers To A Large Area Of Land That Is Planned And Developed For Residential Or Commercial Purposes. These Estates Are Designed To Accommodate A Community, Providing Space For Housing, Amenities, And Infrastructure. The Purpose Of A Land Estate Is Multifaceted, Encompassing Both Economic And Social Objectives.",
       techStack: "Reactjs, MongoDB, Nodejs, Express, Firebase, tailwind Css",
       live: "https://landind-estate-service.onrender.com/",
-      source:"https://github.com/tchasinga/Real-Estate-house-Marketplace"
+      source: "https://github.com/tchasinga/Real-Estate-house-Marketplace",
     },
 
     {
       id: 8,
       title: "Blogs sharing",
       image: projectEight,
-      details: "Blogs ideas sharing involves the creation and dissemination of content that inspires, informs, or entertains an audience. Content creators share thoughts, experiences, and insights on diverse topic…",
-      techStack: "Reactjs, MongoDB, Nodejs, Express, Firebase, tailwind Css, Material Ui",
+      details:
+        "Blogs ideas sharing involves the creation and dissemination of content that inspires, informs, or entertains an audience. Content creators share thoughts, experiences, and insights on diverse topic…",
+      techStack:
+        "Reactjs, MongoDB, Nodejs, Express, Firebase, tailwind Css, Material Ui",
       live: "https://blogs-sharing-ideas.onrender.com",
-      source: "https://github.com/tchasinga/sharing-ideas-blogs"
+      source: "https://github.com/tchasinga/sharing-ideas-blogs",
     },
-
 
     {
       id: 9,
       title: "Space Travel hub",
       image: projectNine,
-      details: "Welcome to the Space Travelers' Hub! This is the ultimate destination for all space enthusiasts, travelers, and adventurers. Whether you're a seasoned astronaut, a curious explorer, or just someone with a passion for the cosmos, you've come to the right place. At the Space Travelers' Hub",
+      details:
+        "Welcome to the Space Travelers' Hub! This is the ultimate destination for all space enthusiasts, travelers, and adventurers. Whether you're a seasoned astronaut, a curious explorer, or just someone with a passion for the cosmos, you've come to the right place. At the Space Travelers' Hub",
       // "Budget Tracker is a user-friendly mobile app that empowers individuals to take control of their personal finances. By tracking all transactions in one place, users get an always up-to-date overview of spending - enabling better decisions",
       techStack: "Redux, ReactJs, Apis, TailwindCss",
       live: "https://space-traveling.onrender.com",
@@ -199,9 +205,12 @@ function Project() {
                       objectFit: "cover",
                     }}
                   />
-                  <a onClick={() => openModal(index)}>
+                  <button
+                    onClick={() => openModal(index)}
+                    style={{ background: "none", border: "none" }}
+                  >
                     <div className="mask absolute inset-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,0.2)] text-newYellow" />
-                  </a>
+                  </button>
                 </div>
                 <h5
                   className="mb-4 text-lg font-bold cursor-pointer hover:text-newYellow dark:text-white dark:hover:text-newYellow"
