@@ -17,6 +17,7 @@ import projectSix from "../assets/images/projects/ScreenshotStuff.png";
 import projectSeven from "../assets/images/projects/ProjectsBGSeven.png";
 import projectEight from "../assets/images/projects/newScreenget.png";
 import projectNine from "../assets/images/projects/DesignOne.png";
+import projectTen from "../assets/images/projects/ScreenshoooTen.png";
 
 function Project() {
   const [projects, setProjects] = useState([
@@ -26,7 +27,7 @@ function Project() {
       image: projectOne,
       details:
         "Share sensitive information only on official, secure websites. ... The Individuals with Disabilities Education Act (IDEA) is a law that makes available a free appropriate public education to eligible children with disabilities throughout the nation and ensures special education and related ...",
-      techStack: "Tailwind Css, Next js, MongoDB, Nodejs ,Express",
+      techStack: "Tailwind Css, Next js, MongoDB, Nodejs , Express",
       live: "https://public-information.netlify.app",
       source: "https://github.com/tchasinga/e-comerce-site",
     },
@@ -120,17 +121,17 @@ function Project() {
       live: "https://space-traveling.onrender.com",
       source: "https://github.com/tchasinga/space-travelers",
     },
-{
-    id: 10,
-    title: "Fitness room",
-    image: projectNine,
-    details:
-      "Whether it's a small nook or an entire room, homeowners are starting to make home gyms a priority. Engaging in a home fitness routine doesn't mean you need expensive workout equipment; there are several home gym designs and home gym ideas that simply require some creativity, a little bit of ...",
-    // "Budget Tracker is a user-friendly mobile app that empowers individuals to take control of their personal finances. By tracking all transactions in one place, users get an always up-to-date overview of spending - enabling better decisions",
-    techStack: "NextJs,TailwindCss , Anime Css , Swipper",
-    live: "https://fitness-rooms.netlify.app/",
-    source: "https://github.com/tchasinga/gym-rooms",
-  }
+    {
+      id: 10,
+      title: "Fitness room",
+      image: projectTen,
+      details:
+        "Whether it's a small nook or an entire room, homeowners are starting to make home gyms a priority. Engaging in a home fitness routine doesn't mean you need expensive workout equipment; there are several home gym designs and home gym ideas that simply require some creativity, a little bit of ...",
+      // "Budget Tracker is a user-friendly mobile app that empowers individuals to take control of their personal finances. By tracking all transactions in one place, users get an always up-to-date overview of spending - enabling better decisions",
+      techStack: "NextJs, TailwindCss , Anime Css , Swipper",
+      live: "https://fitness-rooms.netlify.app/",
+      source: "https://github.com/tchasinga/gym-rooms",
+    },
   ]);
 
   const sortedProjects = [...projects].sort((a, b) => b.id - a.id);
