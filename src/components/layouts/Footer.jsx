@@ -42,7 +42,7 @@ function Footer() {
             <FiGlobe />
           </a>
           <a
-            href="#"
+            href="https://wellfound.com/u/tchasinga-jacques"
             rel="noreferrer"
             target="_blank"
             className="text-2xl hover:text-newDarkYello"
