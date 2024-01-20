@@ -138,8 +138,7 @@ function Project() {
      id : 11,
      title: "Magazine shopping",
      image: projectEleven,
-      details:
-        "Magazine shopping is a website that help you to get close of your own data or information security, and it can used as to-do list management",
+      details:"Magazine shopping refers to the practice of purchasing goods or services directly from advertisements or featured products found in magazines. Consumers may be influenced by the recommendations, re…"
     }
   ]);
 
