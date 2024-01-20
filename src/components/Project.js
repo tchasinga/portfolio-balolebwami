@@ -140,6 +140,8 @@ function Project() {
      image: projectEleven,
      details:"Magazine shopping refers to the practice of purchasing goods or services directly from advertisements or featured products found in magazines. Consumers may be influenced by the recommendations, re…",
      techStack: "Nextjs, TailwindCss, Material Ui, Oop, Framer-motions",
+     live: "https://magazine-shopping.onrender.com/",
+     source: "https://github.com/tchasinga/magazine-shopping",
     }
   ]);
 
