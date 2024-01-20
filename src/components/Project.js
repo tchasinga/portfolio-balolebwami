@@ -144,7 +144,7 @@ function Project() {
      techStack: "Nextjs, TailwindCss, Material Ui, Oop, Framer-motions",
      live: "https://magazine-shopping.onrender.com/",
      source: "https://github.com/tchasinga/magazine-shopping",
-    }
+    },
   ]);
 
   const sortedProjects = [...projects].sort((a, b) => b.id - a.id);
