@@ -134,6 +134,7 @@ function Project() {
     },
     {
      id : 11,
+     title: "",
     }
   ]);
 
