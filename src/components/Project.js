@@ -134,7 +134,7 @@ function Project() {
     },
     {
      id : 11,
-     title: "Magazine ",
+     title: "Magazine shopping",
     }
   ]);
 
