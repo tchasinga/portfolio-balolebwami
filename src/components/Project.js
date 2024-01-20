@@ -19,7 +19,7 @@ import projectEight from "../assets/images/projects/newScreenget.png";
 import projectNine from "../assets/images/projects/DesignOne.png";
 import projectTen from "../assets/images/projects/ScreenshoooTen.png";
 import projectEleven from "../assets/images/projects/magazineStuff.png";
-import projectTwelve from "../assets/images/projects/CalculatriceMath.png";
+import projectTwelve from "../assets/images/projects/CalculatriceMathi.png";
 
 
 
