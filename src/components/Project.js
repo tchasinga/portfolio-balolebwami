@@ -137,6 +137,7 @@ function Project() {
     {
      id : 11,
      title: "Magazine shopping",
+     image: projectEleven,
     }
   ]);
 
