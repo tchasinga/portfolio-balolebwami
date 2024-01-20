@@ -18,6 +18,8 @@ import projectSeven from "../assets/images/projects/ProjectsBGSeven.png";
 import projectEight from "../assets/images/projects/newScreenget.png";
 import projectNine from "../assets/images/projects/DesignOne.png";
 import projectTen from "../assets/images/projects/ScreenshoooTen.png";
+import projectEleven from "../assets/images/projects/magazineStuff.png";
+
 
 function Project() {
   const [projects, setProjects] = useState([
