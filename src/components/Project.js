@@ -132,7 +132,9 @@ function Project() {
       live: "https://fitness-rooms.netlify.app/",
       source: "https://github.com/tchasinga/gym-rooms",
     },
-    {}
+    {
+      
+    }
   ]);
 
   const sortedProjects = [...projects].sort((a, b) => b.id - a.id);
