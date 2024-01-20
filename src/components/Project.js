@@ -138,7 +138,8 @@ function Project() {
      id : 11,
      title: "Magazine shopping",
      image: projectEleven,
-      details:"Magazine shopping refers to the practice of purchasing goods or services directly from advertisements or featured products found in magazines. Consumers may be influenced by the recommendations, re…"
+     details:"Magazine shopping refers to the practice of purchasing goods or services directly from advertisements or featured products found in magazines. Consumers may be influenced by the recommendations, re…",
+     techStack: "Nextjs, TailwindCss, Material Ui, Oop, Framer-motions",
     }
   ]);
 
