@@ -148,6 +148,7 @@ function Project() {
     {
       id:12,
       title: "Calculator",
+      image: projectTwelve,
     }
   ]);
 
