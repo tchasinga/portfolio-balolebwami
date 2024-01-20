@@ -146,7 +146,8 @@ function Project() {
      source: "https://github.com/tchasinga/magazine-shopping",
     },
     {
-      
+      id:12,
+      title: "Calculator",
     }
   ]);
 
