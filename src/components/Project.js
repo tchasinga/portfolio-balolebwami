@@ -20,6 +20,7 @@ import projectNine from "../assets/images/projects/DesignOne.png";
 import projectTen from "../assets/images/projects/ScreenshoooTen.png";
 import projectEleven from "../assets/images/projects/magazineStuff.png";
 import projectTwelve from "../assets/images/projects/CalculatriceMathi.png";
+import projectThirtheen from "../assets/images/projects/NativePresent.png"
 
 
 
@@ -153,6 +154,14 @@ function Project() {
       techStack:"Reactjs, TailwindCss, Material Ui, Oop, Framer-motions",
       live: "https://math-6k4c.onrender.com/",
       source: "https://github.com/tchasinga/math-magecianes",
+    },
+    {
+      id: 13,
+      image: projectThirtheen,
+      details: "React Native combines the best parts of native development with React, a best-in-class JavaScript library for building user interfaces. Use a little—or a lot. You can use React Native today in your existing Android and iOS projects or you can create a whole new app from scratch.",
+      techStack: "Nextjs, TailwindCss, Framer-motions, animejs",
+      live: "https://native-present.netlify.app",
+      source: "https://github.com/tchasinga/native-present"
     }
   ]);
 
