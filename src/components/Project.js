@@ -34,7 +34,7 @@ function Project() {
         "Share sensitive information only on official, secure websites. ... The Individuals with Disabilities Education Act (IDEA) is a law that makes available a free appropriate public education to eligible children with disabilities throughout the nation and ensures special education and related ...",
       techStack: "Tailwind Css, Next js, MongoDB, Nodejs , Express",
       live: "https://public-information.netlify.app",
-      source: "https://github.com/tchasinga/e-comerce-site",
+      source: "https://github.com/tchasinga/web-page",
     },
 
     {
