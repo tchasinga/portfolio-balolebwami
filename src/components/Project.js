@@ -21,6 +21,7 @@ import projectTen from "../assets/images/projects/ScreenshoooTen.png";
 import projectEleven from "../assets/images/projects/magazineStuff.png";
 import projectTwelve from "../assets/images/projects/CalculatriceMathi.png";
 import projectThirtheen from "../assets/images/projects/NativePresent.png"
+import projectFourTheening from "../assets/images/projects/AmIdisplayResponsive.png"
 
 
 
@@ -163,6 +164,15 @@ function Project() {
       techStack: "Nextjs, TailwindCss, Framer-motions, animejs",
       live: "https://native-present.netlify.app",
       source: "https://github.com/tchasinga/native-present"
+    },
+    {
+      id: 14,
+      title: "Single-pages",
+      image: projectFourTheening,
+      details: "building server-rendered applications. While it&apos;s often used for server-side rendering, it can also be used to create single-page applications (SPAs) with client-side rendering. Here&apos;s a brief overview of how to create a single-page application using Next.js",
+      techStack: "Nextjs, Apis, TailwindCss, Framer-motions,",
+      live: "https://masingle-pages.netlify.app",
+      source: "https://github.com/tchasinga/single-page"
     }
   ]);
 
