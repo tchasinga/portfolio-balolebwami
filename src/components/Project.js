@@ -176,7 +176,8 @@ function Project() {
       source: "https://github.com/tchasinga/single-page"
     },
     {
-      
+     id: 15,
+     title: "Message App" 
     }
   ]);
 
