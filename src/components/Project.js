@@ -174,6 +174,9 @@ function Project() {
       techStack: "Nextjs, Apis, TailwindCss, Framer-motions,",
       live: "https://masingle-pages.netlify.app",
       source: "https://github.com/tchasinga/single-page"
+    },
+    {
+      
     }
   ]);
 
