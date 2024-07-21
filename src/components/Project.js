@@ -179,7 +179,9 @@ function Project() {
      id: 15,
      title: "Message App",
      image: projectFiveThing,
-     details : ""
+     details : "A tech developer service offers expert guidance and solutions in software development, encompassing areas like web and mobile app creation, cloud computing, and cybersecurity. These services typica…",
+     techStack : "Reactjs, Express, Nodejs, TailwindCss, Framer-motion, Sokect.io, Mongodb",
+     
     }
   ]);
 
