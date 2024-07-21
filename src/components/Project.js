@@ -187,7 +187,7 @@ function Project() {
     {
       id : 16,
       title : "tech developer service",
-      image : "A tech developer service offers expert guidance and solutions in software development, encompassing areas like web and mobile app creation, cloud computing, and cybersecurity. These services typically include custom software development, system integration, and IT consulting to optimize",
+      image : projectFiveThingOne,
       
     }
   ]);
