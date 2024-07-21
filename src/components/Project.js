@@ -186,7 +186,8 @@ function Project() {
     }, 
     {
       id : 16,
-      
+      title : "tech developer service",
+      image : 
     }
   ]);
 
