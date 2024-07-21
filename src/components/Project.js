@@ -177,7 +177,9 @@ function Project() {
     },
     {
      id: 15,
-     title: "Message App" 
+     title: "Message App",
+     image: projectFiveThing,
+     details : ""
     }
   ]);
 
