@@ -190,7 +190,7 @@ function Project() {
       image : projectFiveThingOne,
       details : "A tech developer service offers expert guidance and solutions in software development, encompassing areas like web and mobile app creation, cloud computing, and cybersecurity. These services typically include custom software development, system integration, and IT consulting to optimize",
       techStack : "Nextjs, tailwindcss, framer-motion",
-      live : ""
+      live : "https://techsolve-ten.vercel.app"
     }
   ]);
 
