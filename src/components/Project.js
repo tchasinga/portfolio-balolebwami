@@ -23,7 +23,7 @@ import projectTwelve from "../assets/images/projects/CalculatriceMathi.png";
 import projectThirtheen from "../assets/images/projects/NativePresent.png"
 import projectFourTheening from "../assets/images/projects/AmIdisplayResponsive.png"
 import projectFiveThing from "../assets/images/projects/TchatAppKozeri.png"
-
+import projectFiveThingOne from "../assets/images/projects/TechSolving.png"
 
 
 function Project() {
