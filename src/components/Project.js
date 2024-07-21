@@ -179,9 +179,10 @@ function Project() {
      id: 15,
      title: "Message App",
      image: projectFiveThing,
-     details : "A tech developer service offers expert guidance and solutions in software development, encompassing areas like web and mobile app creation, cloud computing, and cybersecurity. These services typica…",
+     details : "It seems like you might be referring to a message chatting application or functionality. Could you please provide more details on what you need help with? For instance, are you looking to implement…",
      techStack : "Reactjs, Express, Nodejs, TailwindCss, Framer-motion, Sokect.io, Mongodb",
-     
+     live : "https://messagge-tchatting.onrender.com",
+
     }
   ]);
 
