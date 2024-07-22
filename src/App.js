@@ -4,7 +4,6 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skill from "./components/Skill";
 import Project from "./components/Project";
-// import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/layouts/Footer";
 import { Analytics } from '@vercel/analytics/react';
@@ -35,7 +34,6 @@ function App({ children }) {
         <About /> 
         <Skill /> 
         <Project />
-        {/* <Blog /> */}
         <Contact />
       </main>
       <Footer />

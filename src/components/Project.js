@@ -1,11 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
-import {
-  EyeIcon,
-  CodeBracketIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { EyeIcon, CodeBracketIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { LiaEnvelopeSolid } from "react-icons/lia";
 
 import projectOne from "../assets/images/projects/CloseLast.png";
@@ -13,18 +9,19 @@ import projectTwo from "../assets/images/projects/DesignTwo.png";
 import projectThree from "../assets/images/projects/DesignThree.png";
 import projectFour from "../assets/images/projects/DesignFour.png";
 import projectFive from "../assets/images/projects/DesignFive.png";
+
 import projectSix from "../assets/images/projects/ScreenshotStuff.png";
 import projectSeven from "../assets/images/projects/ProjectsBGSeven.png";
 import projectEight from "../assets/images/projects/newScreenget.png";
 import projectNine from "../assets/images/projects/DesignOne.png";
 import projectTen from "../assets/images/projects/ScreenshoooTen.png";
+
 import projectEleven from "../assets/images/projects/magazineStuff.png";
 import projectTwelve from "../assets/images/projects/CalculatriceMathi.png";
 import projectThirtheen from "../assets/images/projects/NativePresent.png"
 import projectFourTheening from "../assets/images/projects/AmIdisplayResponsive.png"
 import projectFiveThing from "../assets/images/projects/TchatAppKozeri.png"
 import projectFiveThingOne from "../assets/images/projects/TechSolving.png"
-
 
 function Project() {
   const [projects, setProjects] = useState([
@@ -123,7 +120,6 @@ function Project() {
       image: projectNine,
       details:
         "Welcome to the Space Travelers' Hub! This is the ultimate destination for all space enthusiasts, travelers, and adventurers. Whether you're a seasoned astronaut, a curious explorer, or just someone with a passion for the cosmos, you've come to the right place. At the Space Travelers' Hub",
-      // "Budget Tracker is a user-friendly mobile app that empowers individuals to take control of their personal finances. By tracking all transactions in one place, users get an always up-to-date overview of spending - enabling better decisions",
       techStack: "Redux, ReactJs, Apis, TailwindCss",
       live: "https://space-traveling.onrender.com",
       source: "https://github.com/tchasinga/space-travelers",
@@ -134,7 +130,6 @@ function Project() {
       image: projectTen,
       details:
         "Whether it's a small nook or an entire room, homeowners are starting to make home gyms a priority. Engaging in a home fitness routine doesn't mean you need expensive workout equipment; there are several home gym designs and home gym ideas that simply require some creativity, a little bit of ...",
-      // "Budget Tracker is a user-friendly mobile app that empowers individuals to take control of their personal finances. By tracking all transactions in one place, users get an always up-to-date overview of spending - enabling better decisions",
       techStack: "NextJs, TailwindCss , Anime Css , Swipper",
       live: "https://fitness-rooms.netlify.app/",
       source: "https://github.com/tchasinga/gym-rooms",
