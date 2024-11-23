@@ -23,6 +23,8 @@ import projectFourTheening from "../assets/images/projects/AmIdisplayResponsive.
 import projectFiveThing from "../assets/images/projects/TchatAppKozeri.png"
 import projectFiveThingOne from "../assets/images/projects/TechSolving.png"
 import projectFiveThingOne2 from "../assets/images/projects/Travllerpages.png"
+import projectFiveThingOne22 from "../assets/images/projects/SnikerWeb.png"
+
 
 
 function Project() {
@@ -196,6 +198,14 @@ function Project() {
       details : "Traveling Pages Informative and Inspirational Travel Website: “The Travel Pages” is an online platform sharing stories and photographs of fascinating people and places, highlighting activities and attractions from their travels.",
       techStack : "Nextjs, tailwindcss, framer-motion",
       live : "https://travelpage-phi.vercel.app"
+    },
+    {
+      id : 17,
+      title : "Shoes shower",
+      image : projectFiveThingOne22,
+      details : "Traveling Pages Informative and Inspirational Travel Website: “The Travel Pages” is an online platform sharing stories and photographs of fascinating people and places, highlighting activities and attractions from their travels.",
+      techStack : "Nextjs, tailwindcss, framer-motion",
+      live : "https://nikelanding-six.vercel.app"
     }
 
   ]);
