@@ -22,6 +22,8 @@ import projectThirtheen from "../assets/images/projects/NativePresent.png"
 import projectFourTheening from "../assets/images/projects/AmIdisplayResponsive.png"
 import projectFiveThing from "../assets/images/projects/TchatAppKozeri.png"
 import projectFiveThingOne from "../assets/images/projects/TechSolving.png"
+import projectFiveThingOne2 from "../assets/images/projects/Travllerpages.png"
+
 
 function Project() {
   const [projects, setProjects] = useState([
@@ -186,7 +188,16 @@ function Project() {
       details : "A tech developer service offers expert guidance and solutions in software development, encompassing areas like web and mobile app creation, cloud computing, and cybersecurity. These services typically include custom software development, system integration, and IT consulting to optimize",
       techStack : "Nextjs, tailwindcss, framer-motion",
       live : "https://techsolve-ten.vercel.app"
+    },
+    {
+      id : 17,
+      title : "Traveling page",
+      image : projectFiveThingOne2,
+      details : "Traveling Pages Informative and Inspirational Travel Website: “The Travel Pages” is an online platform sharing stories and photographs of fascinating people and places, highlighting activities and attractions from their travels.",
+      techStack : "Nextjs, tailwindcss, framer-motion",
+      live : "https://travelpage-phi.vercel.app"
     }
+
   ]);
 
   const sortedProjects = [...projects].sort((a, b) => b.id - a.id);
