@@ -83,7 +83,7 @@ function Contact() {
                   </div>
                   <div className="ml-2">
                     <p className="mb-2 font-bold">Call</p>
-                    <p>+250 787 289 028</p>
+                    <p>+254 75 32 75 299</p>
                   </div>
                 </div>
               </motion.div>
