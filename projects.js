@@ -309,9 +309,6 @@ function renderGrid() {
   gridEl.querySelectorAll('[data-index]').forEach((el) => {
     el.addEventListener('click', () => openProjectModal(Number(el.dataset.index)));
   });
-
-  window.initProjectCardReveal?.();
-  window.refreshScrollAnimations?.();
 }
 
 function renderModalContent(index) {
