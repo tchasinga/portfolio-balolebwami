@@ -73,22 +73,5 @@ document.querySelectorAll('.mobile-nav-link').forEach((link) => {
   link.addEventListener('click', () => setMobileMenuOpen(false));
 });
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('opacity-100', 'translate-y-0');
-        entry.target.classList.remove('opacity-0', 'translate-y-6');
-      }
-    });
-  },
-  { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-);
-
-document.querySelectorAll('.skill-card, .project-card').forEach((card) => {
-  card.classList.add('opacity-0', 'translate-y-6', 'transition-all', 'duration-700');
-  observer.observe(card);
-});
-
 typeRoles();
 updateCurrentYear();
