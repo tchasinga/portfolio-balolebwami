@@ -137,13 +137,15 @@ function setupAppCheck(app) {
     return;
   }
 
-  // Must be set before initializeAppCheck (also set early in index.html for reliability).
-  if (isLocalhost()) {
+  // Prefer an explicit debug token from index.html; otherwise mint one and log it.
+  if (isLocalhost() && self.FIREBASE_APPCHECK_DEBUG_TOKEN == null) {
     self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
     console.info(
       '[App Check] Debug mode on. Copy the "AppCheck debug token" UUID from this console, ' +
       'then register it in Firebase Console → App Check → Apps → ⋮ → Manage debug tokens.'
     );
+  } else if (isLocalhost()) {
+    console.info('[App Check] Using registered localhost debug token.');
   }
 
   initializeAppCheck(app, {

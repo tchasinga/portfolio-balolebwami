@@ -72,8 +72,11 @@
     Firebase Console → App Check → Apps → ⋮ → Manage debug tokens → Add → hard-refresh.
   -->
   <script>
+    // Localhost only — App Check debug token from Firebase Console.
+    // Do not use this on production. If the repo is public, avoid committing this value
+    // (or rotate the token in Firebase Console → Manage debug tokens).
     if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
-      self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
+      self.FIREBASE_APPCHECK_DEBUG_TOKEN = '649452E6-3AA8-44C6-A142-EC1ACF558848';
     }
   </script>
 
