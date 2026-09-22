@@ -62,7 +62,20 @@
   </script>
 </head>
 
-<body class="bg-surface-900 text-slate-200 font-sans antialiased">
+<body
+  class="bg-surface-900 text-slate-200 font-sans antialiased"
+  data-recaptcha-site-key="6LcI5cgtAAAAAMRm2f4CPTE0ykKiADml_4dQ-XN-"
+>
+  <!--
+    App Check uses reCAPTCHA Enterprise (already registered in Firebase).
+    On localhost: open DevTools → Console → copy "AppCheck debug token" UUID →
+    Firebase Console → App Check → Apps → ⋮ → Manage debug tokens → Add → hard-refresh.
+  -->
+  <script>
+    if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+      self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
+    }
+  </script>
 
   <!-- Navigation -->
   <header id="site-header" class="fixed top-0 inset-x-0 z-50 border-b border-white/5 bg-surface-900/80 backdrop-blur-lg">

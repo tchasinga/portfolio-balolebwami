@@ -1,6 +1,6 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js';
 import { getAI, getGenerativeModel, GoogleAIBackend } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-ai.js';
-import { initializeAppCheck, ReCaptchaV3Provider } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-app-check.js';
+import { initializeAppCheck, ReCaptchaEnterpriseProvider } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-app-check.js';
 
 const MODEL_NAME = 'gemini-3.5-flash';
 
@@ -119,25 +119,61 @@ function isLocalhost() {
   return location.hostname === 'localhost' || location.hostname === '127.0.0.1';
 }
 
+function getRecaptchaSiteKey() {
+  return (document.body.dataset.recaptchaSiteKey || '').trim();
+}
+
 function setupAppCheck(app) {
-  const recaptchaSiteKey = document.body.dataset.recaptchaSiteKey;
+  const recaptchaSiteKey = getRecaptchaSiteKey();
+
   if (!recaptchaSiteKey) {
+    console.warn(
+      '[App Check] Missing reCAPTCHA site key. Set data-recaptcha-site-key on <body> ' +
+      '(Firebase Console → App Check → your web app). Without it, Firebase AI will fail when App Check is enforced.'
+    );
     if (isLocalhost()) {
-      console.info(
-        'App Check: add data-recaptcha-site-key to <body> for local testing, then register the debug token shown in the browser console.'
-      );
+      setStatus('Add reCAPTCHA site key for local AI testing', true);
     }
     return;
   }
 
+  // Must be set before initializeAppCheck (also set early in index.html for reliability).
   if (isLocalhost()) {
     self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
+    console.info(
+      '[App Check] Debug mode on. Copy the "AppCheck debug token" UUID from this console, ' +
+      'then register it in Firebase Console → App Check → Apps → ⋮ → Manage debug tokens.'
+    );
   }
 
   initializeAppCheck(app, {
-    provider: new ReCaptchaV3Provider(recaptchaSiteKey),
+    provider: new ReCaptchaEnterpriseProvider(recaptchaSiteKey),
     isTokenAutoRefreshEnabled: true,
   });
+}
+
+function formatAiError(error) {
+  const message = error?.message || String(error);
+  const lower = message.toLowerCase();
+
+  if (
+    lower.includes('app check') ||
+    lower.includes('appcheck') ||
+    lower.includes('403') ||
+    lower.includes('permission') ||
+    lower.includes('attestation')
+  ) {
+    if (isLocalhost()) {
+      return 'App Check blocked this local request. Open the browser console, copy the AppCheck debug token UUID, register it in Firebase Console → App Check → Manage debug tokens, then hard-refresh.';
+    }
+    return 'App Check blocked this request. Verify reCAPTCHA is configured for this domain in the Firebase Console.';
+  }
+
+  if (lower.includes('model') || lower.includes('not found') || lower.includes('404')) {
+    return `AI model error: ${message}`;
+  }
+
+  return `Something went wrong: ${message}`;
 }
 
 function createModel(ai) {
@@ -401,7 +437,7 @@ async function sendMessage(message) {
   } catch (error) {
     console.error('AI assistant error:', error);
     streamDone = true;
-    assistantBubble.textContent = 'Something went wrong. If you are testing locally, register your App Check debug token in the Firebase console.';
+    assistantBubble.textContent = formatAiError(error);
     finishTyping(true);
   }
 }
