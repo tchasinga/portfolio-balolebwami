@@ -159,6 +159,15 @@ function formatAiError(error) {
   const lower = message.toLowerCase();
 
   if (
+    lower.includes('prepayment') ||
+    lower.includes('credits are depleted') ||
+    lower.includes('billing') ||
+    lower.includes('429')
+  ) {
+    return 'The AI service is out of credits. Add billing or prepaid credits in Google AI Studio (ai.studio/projects), then try again.';
+  }
+
+  if (
     lower.includes('app check') ||
     lower.includes('appcheck') ||
     lower.includes('403') ||
@@ -171,7 +180,7 @@ function formatAiError(error) {
     return 'App Check blocked this request. Verify reCAPTCHA is configured for this domain in the Firebase Console.';
   }
 
-  if (lower.includes('model') || lower.includes('not found') || lower.includes('404')) {
+  if (lower.includes('not found') || lower.includes('404') || lower.includes('is not found')) {
     return `AI model error: ${message}`;
   }
 
