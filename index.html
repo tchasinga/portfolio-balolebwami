@@ -22,6 +22,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- reCAPTCHA Enterprise: protects the AI assistant's "send message" action from bots/abuse. -->
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LekjeMtAAAAAEGfox0cS_S7kL1eozT1xLd_NqpL" async defer></script>
   <script>
     tailwind.config = {
       theme: {
@@ -65,8 +67,16 @@
 <body
   class="bg-surface-900 text-slate-200 font-sans antialiased"
   data-recaptcha-site-key="6LcI5cgtAAAAAMRm2f4CPTE0ykKiADml_4dQ-XN-"
+  data-recaptcha-action-site-key="6LekjeMtAAAAAEGfox0cS_S7kL1eozT1xLd_NqpL"
 >
   <!--
+    Two separate reCAPTCHA Enterprise keys are in play on purpose:
+    - data-recaptcha-site-key: used by Firebase App Check to attest that requests to the
+      Firebase AI backend come from this real app (see comment below).
+    - data-recaptcha-action-site-key: used directly via grecaptcha.enterprise.execute(...)
+      in firebase-ai-assistant.js to score the "send_message" action on the AI chat form
+      before each message is sent, protecting it from bots/abuse.
+
     App Check uses reCAPTCHA Enterprise (already registered in Firebase).
     On localhost: open DevTools → Console → copy "AppCheck debug token" UUID →
     Firebase Console → App Check → Apps → ⋮ → Manage debug tokens → Add → hard-refresh.

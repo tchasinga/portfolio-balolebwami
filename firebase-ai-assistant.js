@@ -123,6 +123,44 @@ function getRecaptchaSiteKey() {
   return (document.body.dataset.recaptchaSiteKey || '').trim();
 }
 
+function getRecaptchaActionSiteKey() {
+  return (document.body.dataset.recaptchaActionSiteKey || '').trim();
+}
+
+// Scores a protected action (e.g. sending a chat message) with reCAPTCHA Enterprise and
+// returns the resulting token, or null if reCAPTCHA isn't available/configured.
+//
+// NOTE: this site has no backend of its own (static Netlify site calling Firebase AI
+// directly from the browser), so the token below is generated but not verified server-side
+// via a createAssessment call. It still deters naive bots (the client-side execute() call
+// requires solving/loading the reCAPTCHA challenge), but for real abuse protection the token
+// should be sent to a server (e.g. a Cloud Function) that calls the reCAPTCHA Enterprise
+// Assessment API and checks the risk score before allowing the action to proceed.
+function getRecaptchaActionToken(action) {
+  const siteKey = getRecaptchaActionSiteKey();
+
+  if (!siteKey || typeof grecaptcha === 'undefined' || !grecaptcha.enterprise) {
+    if (!siteKey) {
+      console.warn(
+        '[reCAPTCHA] Missing action site key. Set data-recaptcha-action-site-key on <body>.'
+      );
+    }
+    return Promise.resolve(null);
+  }
+
+  return new Promise((resolve) => {
+    grecaptcha.enterprise.ready(async () => {
+      try {
+        const token = await grecaptcha.enterprise.execute(siteKey, { action });
+        resolve(token);
+      } catch (error) {
+        console.warn('[reCAPTCHA] Failed to get token for action', action, error);
+        resolve(null);
+      }
+    });
+  });
+}
+
 function setupAppCheck(app) {
   const recaptchaSiteKey = getRecaptchaSiteKey();
 
@@ -381,9 +419,15 @@ function computeTypeStep(knownLength) {
   return Math.min(6, Math.max(2, Math.round(knownLength / 60)));
 }
 
-async function sendMessage(message) {
+async function sendMessage(message, recaptchaToken = null) {
   const trimmed = message.trim();
   if (!trimmed || isSending) return;
+
+  if (recaptchaToken) {
+    // Token acquired for the "send_message" action. See getRecaptchaActionToken() for why
+    // this isn't verified server-side yet — surfaced here so it's easy to wire up later.
+    console.debug('[reCAPTCHA] send_message token acquired:', `${recaptchaToken.slice(0, 12)}…`);
+  }
 
   hideSuggestions();
   appendMessage('user', trimmed);
@@ -464,7 +508,15 @@ document.addEventListener('keydown', (event) => {
 
 form?.addEventListener('submit', (event) => {
   event.preventDefault();
-  sendMessage(input.value);
+
+  const message = input.value;
+  if (!message.trim() || isSending) return;
+
+  // Protect the "send message" action (hits the paid Gemini API) with reCAPTCHA Enterprise
+  // before letting it through.
+  getRecaptchaActionToken('send_message').then((token) => {
+    sendMessage(message, token);
+  });
 });
 
 renderSuggestions();
