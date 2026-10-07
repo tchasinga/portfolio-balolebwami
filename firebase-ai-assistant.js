@@ -5,13 +5,13 @@ import { initializeAppCheck, ReCaptchaEnterpriseProvider } from 'https://www.gst
 const MODEL_NAME = 'gemini-3.5-flash';
 
 const FIREBASE_CONFIG = {
-   apiKey: "AIzaSyCHF45EXr06NqFDzy1OVjVu1J3lT8rT-Eg",
-  authDomain: "mymainservices-95aff.firebaseapp.com",
-  projectId: "mymainservices-95aff",
-  storageBucket: "mymainservices-95aff.firebasestorage.app",
-  messagingSenderId: "534885389454",
-  appId: "1:534885389454:web:eebdff634f5b2e09f9e5df",
-  measurementId: "G-ZYTENGJQJ6"
+  apiKey: "AIzaSyCaOocwSqo2JVI5Pfyw_no__RGY350yybY",
+  authDomain: "aiprojectfortest-ecc16.firebaseapp.com",
+  projectId: "aiprojectfortest-ecc16",
+  storageBucket: "aiprojectfortest-ecc16.firebasestorage.app",
+  messagingSenderId: "161356290403",
+  appId: "1:161356290403:web:35eb3668423faad38e1b56",
+  measurementId: "G-WBBNT3L9L5"
 };
 
 const PROJECTS_FALLBACK_TEXT = `1. LandEstate (Full-Stack) — real estate platform. Tech stack: React, Node.js, Express, MongoDB, Firebase, AWS, Tailwind CSS.
