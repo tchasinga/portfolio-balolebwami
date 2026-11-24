@@ -1,5 +1,8 @@
 [build]
   command = "npm run build"
+  # Next.js output directory. Netlify's Next.js runtime needs this to deploy the
+  # app (pages, server functions, static assets) instead of the repository root.
+  publish = ".next"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "22"
