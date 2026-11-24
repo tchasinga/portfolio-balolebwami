@@ -1,18 +1,55 @@
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js';
-import { getAI, getGenerativeModel, GoogleAIBackend } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-ai.js';
+import { initializeApp, getApps, getApp } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js';
+import { getAnalytics, isSupported } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-analytics.js';
 import { initializeAppCheck, ReCaptchaEnterpriseProvider } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-app-check.js';
+import { getAI, getGenerativeModel, GoogleAIBackend } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-ai.js';
 
-const MODEL_NAME = 'gemini-3.5-flash';
+const MODEL_NAME = 'gemini-3-flash-preview';
 
-const FIREBASE_CONFIG = {
-  apiKey: "AIzaSyCaOocwSqo2JVI5Pfyw_no__RGY350yybY",
-  authDomain: "aiprojectfortest-ecc16.firebaseapp.com",
-  projectId: "aiprojectfortest-ecc16",
-  storageBucket: "aiprojectfortest-ecc16.firebasestorage.app",
-  messagingSenderId: "161356290403",
-  appId: "1:161356290403:web:35eb3668423faad38e1b56",
-  measurementId: "G-WBBNT3L9L5"
+const firebaseConfig = {
+  apiKey: 'AIzaSyDgzA820je959WT18QX8j6tAwuu94v9IAQ',
+  authDomain: 'mydocside.firebaseapp.com',
+  projectId: 'mydocside',
+  storageBucket: 'mydocside.firebasestorage.app',
+  messagingSenderId: '503761655048',
+  appId: '1:503761655048:web:fe869e9e54db908b6a08bd',
+  measurementId: 'G-8WE84YDLCB',
 };
+
+// Registered in Firebase console > App Check > Manage debug tokens
+const APPCHECK_DEBUG_TOKEN = '649452E6-3AA8-44C6-A142-EC1ACF558848';
+
+// reCAPTCHA Enterprise key ID (Google Cloud > Security > Fraud Defense > Keys)
+const RECAPTCHA_ENTERPRISE_SITE_KEY = '6LekjeMtAAAAAEGfox0cS_S7kL1eozT1xLd_NqpL';
+
+const isBrowser = typeof window !== 'undefined';
+
+const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
+
+if (isBrowser) {
+  const isLocalDev =
+    window.location.hostname === 'localhost' ||
+    window.location.hostname === '127.0.0.1' ||
+    window.location.hostname.startsWith('192.168.');
+
+  if (isLocalDev) {
+    self.FIREBASE_APPCHECK_DEBUG_TOKEN = APPCHECK_DEBUG_TOKEN;
+    console.log('App Check: Running in LOCAL DEBUG mode.');
+  }
+
+  if (!globalThis._appCheckInitialized) {
+    initializeAppCheck(app, {
+      provider: new ReCaptchaEnterpriseProvider(RECAPTCHA_ENTERPRISE_SITE_KEY),
+      isTokenAutoRefreshEnabled: true,
+    });
+    globalThis._appCheckInitialized = true;
+  }
+}
+
+export const analytics = isBrowser
+  ? isSupported().then((supported) => (supported ? getAnalytics(app) : null))
+  : Promise.resolve(null);
+
+const ai = getAI(app, { backend: new GoogleAIBackend() });
 
 const PROJECTS_FALLBACK_TEXT = `1. LandEstate (Full-Stack) — real estate platform. Tech stack: React, Node.js, Express, MongoDB, Firebase, AWS, Tailwind CSS.
 2. Blogs Sharing (Full-Stack) — blogging platform. Tech stack: React, Node.js, MongoDB, Redux, Firebase, Material UI, Tailwind CSS.
@@ -116,15 +153,15 @@ let isOpen = false;
 let isSending = false;
 
 function isLocalhost() {
-  return location.hostname === 'localhost' || location.hostname === '127.0.0.1';
-}
-
-function getRecaptchaSiteKey() {
-  return (document.body.dataset.recaptchaSiteKey || '').trim();
+  return (
+    location.hostname === 'localhost' ||
+    location.hostname === '127.0.0.1' ||
+    location.hostname.startsWith('192.168.')
+  );
 }
 
 function getRecaptchaActionSiteKey() {
-  return (document.body.dataset.recaptchaActionSiteKey || '').trim();
+  return RECAPTCHA_ENTERPRISE_SITE_KEY;
 }
 
 // Scores a protected action (e.g. sending a chat message) with reCAPTCHA Enterprise and
@@ -158,37 +195,6 @@ function getRecaptchaActionToken(action) {
         resolve(null);
       }
     });
-  });
-}
-
-function setupAppCheck(app) {
-  const recaptchaSiteKey = getRecaptchaSiteKey();
-
-  if (!recaptchaSiteKey) {
-    console.warn(
-      '[App Check] Missing reCAPTCHA site key. Set data-recaptcha-site-key on <body> ' +
-      '(Firebase Console → App Check → your web app). Without it, Firebase AI will fail when App Check is enforced.'
-    );
-    if (isLocalhost()) {
-      setStatus('Add reCAPTCHA site key for local AI testing', true);
-    }
-    return;
-  }
-
-  // Prefer an explicit debug token from index.html; otherwise mint one and log it.
-  if (isLocalhost() && self.FIREBASE_APPCHECK_DEBUG_TOKEN == null) {
-    self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
-    console.info(
-      '[App Check] Debug mode on. Copy the "AppCheck debug token" UUID from this console, ' +
-      'then register it in Firebase Console → App Check → Apps → ⋮ → Manage debug tokens.'
-    );
-  } else if (isLocalhost()) {
-    console.info('[App Check] Using registered localhost debug token.');
-  }
-
-  initializeAppCheck(app, {
-    provider: new ReCaptchaEnterpriseProvider(recaptchaSiteKey),
-    isTokenAutoRefreshEnabled: true,
   });
 }
 
@@ -240,10 +246,6 @@ function createModel(ai) {
 function ensureChat() {
   if (chat) return chat;
 
-  const app = initializeApp(FIREBASE_CONFIG);
-  setupAppCheck(app);
-
-  const ai = getAI(app, { backend: new GoogleAIBackend() });
   chat = createModel(ai);
   return chat;
 }
